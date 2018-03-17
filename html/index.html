@@ -1,11 +1,10 @@
+<!DOCTYPE html>
+<html>
 <head>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 
@@ -16,8 +15,7 @@
 <body>
 
 	<!-- <img src='../images/InfuseLogo.png'> -->
-
-	 <nav class='navbar sticky-top navbar-expand-md'>
+	 <nav id='nav-horizontal' class='navbar sticky-top navbar-expand-md'>
 	  	<a class="navbar-brand" href="#">
     		<img src="../images/InfuseLogo.png" height="50" alt="">
   	  	</a>
@@ -28,20 +26,58 @@
         <!-- Nav Site -->
         <ul class='navbar-nav ml-auto'>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>About</a>           
+            <a class='nav-link' href='#'>About</a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>Products</a>           
+            <a class='nav-link' href='#'>Products</a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>Tour</a>           
+            <a class='nav-link' href='#'>Tour</a>
           </li>
           <li class='nav-item'>
-            <a class='nav-link' href='#'>Contact</a>           
-          </li>          
-          
+            <a class='nav-link' href='#'>Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
+		<!-- Side Navbar -->
+
+		<nav id='nav-sidebar'>
+			<!-- Close Sidebar -->
+			<div id="sidebar-close">
+				<i class="fa fa-window-close"></i>
+			</div>
+
+			<div class="sidebar-brand">
+				<img src='../images/InfuseLogo.png' height="30">
+			</div>
+
+			<ul class='sidebar-links'>
+				<li class='sidebar-item active'><a href='#'>About</a></li>
+				<li class='sidebar-item'><a href='#'>Products</a></li>
+				<li class='sidebar-item'><a href='#'>Tour</a></li>
+				<li class='sidebar-item'><a href='#'>Contact</a></li>
+			</ul>
+
+
+
+			<div class='overlay'></div>
+		</nav>
+
+		<div id='sidebar-open'>
+			Open
+			<i class="fas fa-bars"></i>
+		</div>
+
+		<main>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sed quam cupiditate aperiam quae facilis tenetur laborum non expedita quod, tempora ex, architecto libero exercitationem? Quis eum facilis rerum consequatur expedita quod voluptatum dolorem veniam! Adipisci, expedita? Omnis eius perferendis accusamus quidem ducimus. Alias consectetur libero ratione doloribus deserunt laboriosam!
+		</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="../javascript/index.js" type='text/javascript'></script>
+
 
 </body>
+</html>
