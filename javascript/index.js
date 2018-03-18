@@ -2,13 +2,16 @@ $(document).ready(function () {
 
   $('#sidebar-close').on('click', function () {
     document.getElementById('nav-sidebar').style.width = '0px';
-    document.main.style.marginLeft = '0px';
+    document.getElementById('maincontent').style.marginLeft = '0px';
     document.body.style.backgroundColor = 'white';
+      $('#headcontent').fadeIn();
+
   });
 
-  $('#sidebar-open').on('click', function () {
-    document.getElementById('nav-sidebar').style.width = '250px';
-    document.main.style.marginLeft = '250px';
+  $('#burger').on('click', function () {
+    document.getElementById('nav-sidebar').style.width = '150px';
+    document.getElementById('maincontent').style.marginLeft = '150px';
     document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+    $('#headcontent').fadeOut();
   });
 });
