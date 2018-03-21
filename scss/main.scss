@@ -1,131 +1,54 @@
-body, html {
+.outter-wrapper {
 	width: 100%;
 	height: 100%;
-	margin: 0;
-	padding: 0;
-}
+	display: grid;
+	grid-template: ". content .";
+	grid-auto-columns: 1fr 5fr 1fr;
 
-main {
-	margin: 1em;
-}
-
-ul {
-	list-style: none;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-// Horizontal Styles
-#nav-horizontal {
-	display: none;
-}
-
-.navbar {
-	background-color: white;
-	border-bottom: 2px solid gray;
-
-	& a {
-		color: black;
-	}
 
 }
 
-.navbar-brand {
-	padding-left: 3em;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-
-// Sidebar stylesheet
-
-#nav-sidebar {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 9999;
-	top: 0;
-	left: 0;
-	background-color: white;
-	overflow-x: hidden;
-	transition: 0.5s;
-}
-
-#sidebar-open {
+.inner-wrapper {
+	grid-area: content;
 	width: 100%;
-	height: 45px;
-	border-bottom: 2px solid black;
-}
+	display: grid;
+	grid-template: "wide1 wide1"		100px
+								 "tall1 small1"		minmax(100px, auto)
+								 "tall1 tall2"		minmax(100px, auto)
+								 "small2 tall2"		minmax(100px, auto)
+								 "wide2 wide2"		minmax(100px, auto)
+								 / 1fr 1fr;
+	grid-gap: 5px;
 
-#side-logo {
-	height: 30px;
-	margin-top: 4px;
-
-
-}
-
-#overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: none;
-	height: 100%;
-	width: 100%;
-	z-index: 9998;
-	background-color: rgba(0,0,0,0.4);
-}
-
-#burger {
-
-	position: absolute;
-	left: 0.5em;
-	top: 0.30em;
-	font-size: 25px;
-	margin: 0;
-	padding: 0;
 
 }
 
-#sidebar-close {
-	position: absolute;
-	top: 1.5em;
-	right: 1em;
 
+.wideone {
+	grid-area: wide1;
+	background-color: blue;
 }
 
-#sidebar-brand {
-	margin-top: 1em;
-	margin-left: 0.5em
+.widetwo {
+	grid-area: wide2;
+	background-color: red;
 }
 
-.sidebar-links {
-	margin: 1em 0em 0em 0em;
-	padding: 0;
+.tallone {
+	grid-area: tall1;
+	background-color: black;
 }
 
-.sidebar-links .sidebar-item {
+.talltwo {
+	grid-area: tall2;
+	background-color: green;
+}
 
-	width: 100%;
-	padding: 0.5em 0em 0.5em 1em;
-	transition: 0.5s ease;
-
-	& a {
-		color: black;
-	}
-
-	&:hover {
-		background: black;
-
-		& a {
-			color: white;
-		}
-	}
-
+.smallone {
+	grid-area: small1;
+	background-color: yellow;
+}
+.smalltwo {
+	grid-area: small2;
+	background-color: purple;
 }

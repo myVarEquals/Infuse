@@ -2,7 +2,6 @@ $(document).ready(function () {
 
   $('#sidebar-close, #overlay').on('click', function () {
     document.getElementById('nav-sidebar').style.width = '0px';
-    document.getElementById('maincontent').style.marginLeft = '1em';
     document.getElementById('maincontent').style.marginTop = '1em';
     document.getElementById('overlay').style.display = 'none';
       $('#headcontent').fadeIn();
