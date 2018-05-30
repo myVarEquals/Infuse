@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Nothing+You+Could+Do|Permanent+Marker" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
@@ -61,36 +62,131 @@
 
 		</nav>
 
-		<header id='headcontent'>
-
+		<header id='headcontent' class='fixed-top'>
 				<i id='burger' class="fas fa-bars"></i>
 				<div id='sidebar-open' class='text-center'>
 					<img id='side-logo' class='mx-auto' src='../images/InfuseLogo.png'>
 				</div>
-
-
 		</header>
 
 		<main id='maincontent'>
 
-			<div class='outter-wrapper'>
+			<div id='landingImg'>
+				 <div id='landingOverlay'></div>
+				 <div id='landingHeaderWrapper' class='text-center'>
+				 	 <h3 id='landingHeader'>Be the artist</h3>
+			 	 </div>
+			</div>
+
+			<div class='outter-wrapper text-center'>
 				<div class='inner-wrapper'>
-
-
-					<div class='grid-item card wideone'>wide2</div>
-					<div class='grid-item card widetwo'>wide2</div>
-					<div class='grid-item card tallone'>tall1</div>
-					<div class='grid-item card talltwo'>tall2</div>
-					<div class='grid-item card smallone'>small1</div>
-					<div class='grid-item card smalltwo'>small2</div>
-
+					<!-- Grid Header -->
+					<div class='grid-item wideone'>
+						<div class='wideOneWrapper'>
+							<h4>Everything you want</h4>
+							<hr>
+							<h4>Nothing you don't</h4>
+						</div>
+					</div>
+					<!-- Diffusors -->
+					<div class='grid-item widetwo'>
+						<div class='overlay-dk'></div>
+						<div class='overlay-text'>
+							<p>Diffusers with endless options</p>
+						</div>
+					</div>
+					<!-- Shampoo -->
+					<div class='grid-item tallone'>
+						<div class='overlay-dk'></div>
+						<div class='overlay-text'>
+							<p>Silky Shampoo</p>
+						</div>
+					</div>
+					<!-- Lotion -->
+					<div class='grid-item talltwo'>
+						<div class='overlay-dk'></div>
+						<div class='overlay-text'>
+							<p>Lavish Lotions</p>
+						</div>
+					</div>
+					<!-- Soap -->
+					<div class='grid-item smallone'>
+						<div class='overlay-dk'></div>
+						<div class='overlay-text'>
+							<p>Soaps from Scratch</p>
+						</div>
+					</div>
+					<!-- Accessories -->
+					<div class='grid-item smalltwo'>
+						<div class='overlay-dk'></div>
+						<div class='overlay-text'>
+							<p>Accessories</p>
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<div id='certifications' class='text-center'>
+				<div class='certswrapper'>
+					<h4>Certified Organic</h4>
+					<hr>
+					<img src='../images/certs.png'>
+				</div>
+			</div>
+
+			<div id='tourimg'>
+				 <div id='tourOverlay'></div>
+				 <div id='tourwrapper' class='text-center'>
+				 	 <h3 id='tourheader'>Take the tour</h3>
+			 	 </div>
+			</div>
+
+			<footer class='text-center'>
+
+				<div class='footergrid text-center'>
+
+					<div class='footernav'>
+						<h4>Nav</h4>
+						<ul>
+							<li>About</li>
+							<li>Products</li>
+							<li>Tour</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+
+					<div class='footerloc'>
+						<h4>Location</h4>
+						<ul>
+							<li>107 S. Rt. 73</li>
+							<li>Marlton, NJ</li>
+							<li>08053</li>
+						</ul>
+					</div>
+
+					<div class='footerhours'>
+						<h4>Hours</h4>
+						<ul>
+							<li>Sun: 11am - 5pm </li>
+							<li>Mon: CLOSED</li>
+							<li>Tue. - Wed - 11am - 7pm</li>
+							<li>Thur. - Sat: 11am - 9pm</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div>Infused LLC 	&copy;</div>
+				<div>Established 2017</div>
+
+			</footer>
 
 
 			<div id='overlay'></div>
 
 		</main>
+
+
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

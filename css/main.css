@@ -1,39 +1,209 @@
+body, html {
+  height: 100%;
+  width: 100; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+#landingImg {
+  position: relative;
+  background-image: url(../images/organic.jpg);
+  background-size: cover;
+  background-position: top center;
+  height: 500px; }
+
+#landingOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+#landingHeaderWrapper, #tourwrapper {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  width: 180px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid white; }
+
+#landingHeader, #tourheader {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  line-height: 1; }
+
 .outter-wrapper {
+  position: relative;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template: ". content .";
-  grid-auto-columns: 1fr 5fr 1fr; }
+  grid-template: "content";
+  grid-auto-columns: 1fr; }
 
 .inner-wrapper {
+  position: relative;
   grid-area: content;
   width: 100%;
   display: grid;
-  grid-template: "wide1 wide1" 100px "tall1 small1" minmax(100px, auto) "tall1 tall2" minmax(100px, auto) "small2 tall2" minmax(100px, auto) "wide2 wide2" minmax(100px, auto)/1fr 1fr;
+  grid-template: "wide1 wide1" minmax(200px, auto) "tall1 small1" minmax(100px, auto) "tall1 tall2" minmax(100px, auto) "small2 tall2" minmax(100px, auto) "wide2 wide2" minmax(100px, auto)/1fr 1fr;
   grid-gap: 5px; }
 
+.grid-item {
+  position: relative; }
+  .grid-item:hover .overlay-dk {
+    opacity: 1;
+    transition: 1s ease; }
+  .grid-item:hover .overlay-text {
+    opacity: 1;
+    height: 50%;
+    transition: 1s ease;
+    bottom: 0; }
+
+.overlay-dk {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 1s ease; }
+
+.overlay-text {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  transition: 1s ease;
+  background-color: #1946ba;
+  color: white; }
+  .overlay-text p {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%); }
+
 .wideone {
+  position: relative;
   grid-area: wide1;
-  background-color: blue; }
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
+.wideOneWrapper {
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .wideOneWrapper hr {
+    border-color: #1946ba; }
 
 .widetwo {
   grid-area: wide2;
-  background-color: red; }
+  height: minmax(100px, auto);
+  width: 100%;
+  background-image: url(../images/diffuser.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
 
 .tallone {
   grid-area: tall1;
-  background-color: black; }
+  height: minmax(100px, auto);
+  width: 100%;
+  background-image: url(../images/shampoo.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
 
 .talltwo {
   grid-area: tall2;
-  background-color: green; }
+  height: minmax(100px, auto);
+  width: 100%;
+  background-image: url(../images/lotion.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
 
 .smallone {
   grid-area: small1;
-  background-color: yellow; }
+  height: minmax(100px, auto);
+  width: 100%;
+  background-image: url(../images/soapblock.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
 
 .smalltwo {
   grid-area: small2;
-  background-color: purple; }
+  height: minmax(100px, auto);
+  width: 100%;
+  background-image: url(../images/accessories.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+#certifications {
+  height: 400px;
+  position: relative;
+  border-bottom: 2px solid #39d52d; }
+
+.certswrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .certswrapper hr {
+    border-color: #39d52d; }
+
+#tourimg {
+  position: relative;
+  background-image: url(../images/tour.png);
+  background-size: cover;
+  background-position: top center;
+  height: 500px; }
+
+#tourOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+footer {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  background-color: #1946ba;
+  color: white;
+  border-top: 2px solid #39d52d; }
+
+.footergrid {
+  position: relative;
+  display: grid;
+  grid-template: "nav loc" minmax(100px, auto) "hours hours" minmax(100px, auto)/1fr 1fr; }
+
+.footernav, .footerloc, .footerhours {
+  padding: 0 10px; }
+  .footernav h4, .footerloc h4, .footerhours h4 {
+    padding: 0;
+    border-bottom: 2px solid #39d52d; }
+
+.footernav {
+  grid-area: nav; }
+
+.footerloc {
+  grid-area: loc; }
+
+.footerhours {
+  grid-area: hours;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */

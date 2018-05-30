@@ -6,7 +6,6 @@ body, html {
 }
 
 main {
-	margin-top: 1em;
 	width: 100%;
 	height: 100%;
 }
@@ -47,6 +46,10 @@ a:hover {
   }
 
 // Sidebar stylesheet
+
+#headcontent {
+	background: white;
+}
 
 #nav-sidebar {
 	height: 100%;
