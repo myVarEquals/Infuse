@@ -8,11 +8,21 @@ ul {
 	padding: 0;
 }
 
+main {
+	width: 100%;
+	
+}
+
+#maincontent {
+	transition: 0.5s;
+	max-width: 900px;
+}
+
 #landingImg {
 	position: relative;
 	background-image: url(../images/organic.jpg);
 	background-size: cover;
-	background-position: top center;
+	background-position: top 25px center;
 	height: 500px;
 }
 
@@ -48,7 +58,6 @@ ul {
 .outter-wrapper {
 	position: relative;
 	width: 100%;
-	height: 100%;
 	display: grid;
 	grid-template: "content";
 	grid-auto-columns: 1fr;
@@ -60,10 +69,10 @@ ul {
 	width: 100%;
 	display: grid;
 	grid-template: "wide1 wide1"		minmax(200px, auto)
-								 "tall1 small1"		minmax(100px, auto)
-								 "tall1 tall2"		minmax(100px, auto)
-								 "small2 tall2"		minmax(100px, auto)
-								 "wide2 wide2"		minmax(100px, auto)
+								 "tall1 small1"		minmax(200px, auto)
+								 "tall1 tall2"		minmax(200px, auto)
+								 "small2 tall2"		minmax(200px, auto)
+								 "wide2 wide2"		minmax(200px, auto)
 								 / 1fr 1fr;
 	grid-gap: 5px;
 }
@@ -138,7 +147,6 @@ ul {
 
 .widetwo {
 	grid-area: wide2;
-	height: minmax(100px, auto);
 	width: 100%;
 	background-image: url(../images/diffuser.png);
 	background-size: cover;
@@ -148,7 +156,6 @@ ul {
 
 .tallone {
 	grid-area: tall1;
-	height: minmax(100px, auto);
 	width: 100%;
 	background-image: url(../images/shampoo.jpg);
 	background-size: cover;
@@ -160,7 +167,6 @@ ul {
 
 .talltwo {
 	grid-area: tall2;
-	height: minmax(100px, auto);
 	width: 100%;
 	background-image: url(../images/lotion.jpg);
 	background-size: cover;
@@ -171,7 +177,6 @@ ul {
 
 .smallone {
 	grid-area: small1;
-	height: minmax(100px, auto);
 	width: 100%;
 	background-image: url(../images/soapblock.jpg);
 	background-size: cover;
@@ -182,7 +187,6 @@ ul {
 }
 .smalltwo {
 	grid-area: small2;
-	height: minmax(100px, auto);
 	width: 100%;
 	background-image: url(../images/accessories.png);
 	background-size: cover;
