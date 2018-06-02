@@ -118,6 +118,8 @@ footer {
   border-top: 2px solid #39d52d; }
 
 .footergrid {
+  width: 100%;
+  margin: 0;
   position: relative;
   display: grid;
   grid-template: "nav loc" minmax(100px, auto) "hours hours" minmax(100px, auto)/1fr 1fr; }
@@ -143,6 +145,10 @@ footer {
     display: block; }
 
   #nav-sidebar, #headcontent {
-    display: none; } }
+    display: none; }
+
+  .footergrid {
+    margin-top: 30px;
+    grid-template: "nav loc hours" minmax(100px, auto)/250px 250px 250px; } }
 
 /*# sourceMappingURL=nav.css.map */

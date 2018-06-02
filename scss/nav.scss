@@ -49,7 +49,7 @@ a:hover {
 	float: right;
 }
 
-// Sidebar stylesheet
+// Sidebar styles
 
 #headcontent {
 	background: white;
@@ -149,7 +149,7 @@ a:hover {
 	}
 
 }
-
+// Footer
 footer {
 	position: relative;
 	height: 350px;
@@ -160,6 +160,8 @@ footer {
 }
 
 .footergrid {
+	width: 100%;
+	margin: 0;
 	position: relative;
 	display: grid;
 	grid-template: "nav loc"			 minmax(100px, auto)
@@ -193,11 +195,19 @@ footer {
 
 
 @media only screen and (min-width: 768px) {
+	// Toggle Navbars
 	#nav-horizontal {
 		display: block;
 	}
 
 	#nav-sidebar, #headcontent {
 		display: none;
+	}
+
+	.footergrid {
+		margin-top: 30px;
+		grid-template: "nav loc hours"			 minmax(100px, auto)
+									 / 250px 250px 250px;
+
 	}
 }

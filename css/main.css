@@ -190,10 +190,25 @@ main {
 @media only screen and (min-width: 600px) {
   #landingImg {
     background-position: top -25px center;
-    height: 550px; } }
+    height: 550px; }
+
+  .inner-wrapper {
+    position: relative;
+    grid-area: content;
+    width: 100%;
+    display: grid;
+    grid-template: "wide1 wide1" minmax(300px, auto) "tall1 small1" minmax(300px, auto) "tall1 tall2" minmax(300px, auto) "small2 tall2" minmax(300px, auto) "wide2 wide2" minmax(400px, auto)/1fr 1fr;
+    grid-gap: 10px; } }
 @media only screen and (min-width: 750px) {
   #landingImg {
-    background-position: top -75px center;
+    background-position: top -100px center;
+    height: 700px; } }
+@media only screen and (min-width: 900px) {
+  #landingImg {
+    background-position: top -100px center;
+    height: 800px; }
+
+  #tourimg {
     height: 700px; } }
 
 /*# sourceMappingURL=main.css.map */
