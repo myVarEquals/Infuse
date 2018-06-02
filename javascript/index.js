@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+  $(function() {
+    if ($(window).width() >= 768) {
+      $('main').addClass('mx-auto')
+    }
+  })
+
   $(window).resize(function() {
     if ($(window).width() >= 768) {
       $('main').addClass('mx-auto')

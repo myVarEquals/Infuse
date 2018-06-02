@@ -2,6 +2,9 @@ body, html {
   height: 100%;
   width: 100; }
 
+body {
+  background-color: rgba(0, 0, 0, 0.8); }
+
 ul {
   margin: 0;
   padding: 0; }
@@ -52,7 +55,8 @@ main {
   width: 100%;
   display: grid;
   grid-template: "content";
-  grid-auto-columns: 1fr; }
+  grid-auto-columns: 1fr;
+  background-color: white; }
 
 .inner-wrapper {
   position: relative;
@@ -156,7 +160,8 @@ main {
 #certifications {
   height: 400px;
   position: relative;
-  border-bottom: 2px solid #39d52d; }
+  border-bottom: 2px solid #39d52d;
+  background-color: white; }
 
 .certswrapper {
   position: absolute;
@@ -179,33 +184,16 @@ main {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5); }
 
-footer {
-  position: relative;
-  height: 350px;
-  width: 100%;
-  background-color: #1946ba;
-  color: white;
-  border-top: 2px solid #39d52d; }
-
-.footergrid {
-  position: relative;
-  display: grid;
-  grid-template: "nav loc" minmax(100px, auto) "hours hours" minmax(100px, auto)/1fr 1fr; }
-
-.footernav, .footerloc, .footerhours {
-  padding: 0 10px; }
-  .footernav h4, .footerloc h4, .footerhours h4 {
-    padding: 0;
-    border-bottom: 2px solid #39d52d; }
-
-.footernav {
-  grid-area: nav; }
-
-.footerloc {
-  grid-area: loc; }
-
-.footerhours {
-  grid-area: hours;
-  margin-bottom: 10px; }
+@media only screen and (min-width: 425px) {
+  #landingImg {
+    background-position: top center; } }
+@media only screen and (min-width: 600px) {
+  #landingImg {
+    background-position: top -25px center;
+    height: 550px; } }
+@media only screen and (min-width: 750px) {
+  #landingImg {
+    background-position: top -75px center;
+    height: 700px; } }
 
 /*# sourceMappingURL=main.css.map */

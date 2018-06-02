@@ -17,11 +17,12 @@ a:hover {
 // Horizontal Styles
 #nav-horizontal {
 	display: none;
+	height: 80px;
 }
 
 .navbar {
 	background-color: white;
-	border-bottom: 2px solid gray;
+	border-bottom: 2px solid black;
 
 	& a {
 		color: black;
@@ -40,6 +41,13 @@ a:hover {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
+
+.nav-horiz-ul {
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	float: right;
+}
 
 // Sidebar stylesheet
 
@@ -141,6 +149,48 @@ a:hover {
 	}
 
 }
+
+footer {
+	position: relative;
+	height: 350px;
+	width: 100%;
+	background-color: rgb(25,70,186);
+	color: white;
+	border-top: 2px solid rgb(57,213,45);
+}
+
+.footergrid {
+	position: relative;
+	display: grid;
+	grid-template: "nav loc"			 minmax(100px, auto)
+								 "hours hours"	 minmax(100px, auto)
+								 / 1fr 1fr;
+
+}
+
+.footernav, .footerloc, .footerhours {
+	padding: 0 10px;
+
+	h4 {
+		padding: 0;
+		border-bottom: 2px solid rgb(57,213,45);
+	}
+
+}
+
+.footernav {
+	grid-area: nav;
+}
+
+.footerloc {
+	grid-area: loc;
+}
+
+.footerhours {
+	grid-area: hours;
+	margin-bottom: 10px;
+}
+
 
 @media only screen and (min-width: 768px) {
 	#nav-horizontal {
