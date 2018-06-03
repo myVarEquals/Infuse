@@ -92,7 +92,7 @@ main {
   width: 100%;
   bottom: 0;
   transition: 1s ease;
-  background-color: #1946ba;
+  background-color: rgba(25, 70, 186, 0.8);
   color: white; }
   .overlay-text p {
     position: relative;

@@ -2,12 +2,54 @@ body, html {
   height: 100%;
   width: 100; }
 
+body {
+  background-color: rgba(0, 0, 0, 0.8); }
+
 ul {
   margin: 0;
   padding: 0; }
 
 main {
   width: 100%;
-  position: relative; }
+  position: relative;
+  background-color: white; }
+
+#maincontent {
+  transition: 0.5s;
+  max-width: 900px;
+  margin-top: 80px; }
+
+#profilewrapper {
+  position: relative;
+  padding-top: 20px; }
+
+.profile-box {
+  position: relative;
+  margin: 70px auto;
+  width: 80%;
+  min-height: 300px;
+  border: 2px solid black; }
+
+.selfie-box {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  height: 120px;
+  width: 180px;
+  background-color: white;
+  border: 2px solid black;
+  display: grid;
+  grid-template: "selfie name" "selfie title";
+  grid-template-columns: 1fr 1fr; }
+
+@media only screen and (min-width: 450px) {
+  .selfie-box {
+    position: absolute;
+    left: -40px;
+    top: -30px;
+    transform: translate(0, 0);
+    height: 150px;
+    width: 100px; } }
 
 /*# sourceMappingURL=about.css.map */
