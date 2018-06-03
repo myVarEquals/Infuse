@@ -17,13 +17,21 @@ main
   position: relative
   background-color: white
 
+h1
+  display: inline
+  margin: 0
+  padding: 0
+
+h5, h6
+  margin: 0
 
 #maincontent
   transition: 0.5s
   max-width: 900px
-  margin-top: 80px
+  margin-top: 40px
 
 #profilewrapper
+  height: 100%
   position: relative
   padding-top: 20px
 
@@ -32,20 +40,56 @@ main
   margin: 70px auto
   width: 80%
   min-height: 300px
-  border: 2px solid black
+  border: 2px solid rgb(57,213,45)
+  background-color: rgb(25,70,186)
+  color: white
 
 .selfie-box
   position: absolute
   left: 50%
   top: 0
   transform: translate(-50%, -50%)
-  height: 120px
+  height: 90px
   width: 180px
   background-color: white
+  color: black
   border: 2px solid black
   display: grid
   grid-template: "selfie name" "selfie title"
   grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr 1fr
+
+
+.selfie
+  position: relative
+  grid-area: selfie
+  height: 60px
+  border-radius: 50%
+  top: 50%
+  left: 15px
+  transform: translate(0, -50%)
+
+
+.name
+  grid-area: name
+  display: flex
+  justify-content: center
+  align-items: flex-end
+
+.title
+  grid-area: title
+  display: flex
+  justify-content: center
+
+.profile
+  position: relative
+  margin-top: 50px
+
+h1
+  display: inline
+  margin: 0
+  padding: 0
+  line-height: 50%
 
 
 @media only screen and (min-width: 450px)
@@ -57,3 +101,20 @@ main
     transform: translate(0,0)
     height: 150px
     width: 100px
+    grid-template: "selfie" "name" "title"
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr 1fr
+
+  .selfie
+    top: 15px
+    left: 15px
+    transform: translate(0, 0)
+
+  .profile
+    margin-top: 0
+
+
+  .dead-space
+    height: 120px
+    width: 50px
+    float: left
