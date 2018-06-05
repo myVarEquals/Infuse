@@ -22,15 +22,37 @@ h1 {
 h5, h6 {
   margin: 0; }
 
+h5 {
+  border-bottom: 2px solid #39d52d;
+  margin: 0 auto; }
+
 #maincontent {
   transition: 0.5s;
   max-width: 900px;
   margin-top: 40px; }
 
+#team {
+  position: relative;
+  height: 500px;
+  background-image: url(../images/team.jpg);
+  background-size: cover;
+  background-position: top center;
+  border-bottom: 2px solid #39d52d; }
+
+.team-msg {
+  position: absolute;
+  width: 250px;
+  padding: 5px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(25, 70, 186, 0.4);
+  color: white;
+  border: 2px solid white; }
+
 #profilewrapper {
   height: 100%;
-  position: relative;
-  padding-top: 20px; }
+  position: relative; }
 
 .profile-box {
   position: relative;
@@ -39,7 +61,8 @@ h5, h6 {
   min-height: 300px;
   border: 2px solid #39d52d;
   background-color: #1946ba;
-  color: white; }
+  color: white;
+  box-shadow: 0px 8px 16px gray; }
 
 .selfie-box {
   position: absolute;
@@ -110,5 +133,8 @@ h1 {
     height: 120px;
     width: 50px;
     float: left; } }
+@media only screen and (min-width: 768px) {
+  #maincontent {
+    margin-top: 80px; } }
 
 /*# sourceMappingURL=about.css.map */
