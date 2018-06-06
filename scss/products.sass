@@ -1,0 +1,23 @@
+body,html
+  height: 100%
+  width: 100%
+
+body
+  background-color: rgba(0,0,0,0.8)
+
+ul
+  margin: 0
+  padding: 0
+
+main
+  position: relative
+  width: 100%
+  max-width: 900px
+  background-color: white
+  transition: 0.5s
+  margin-top: 40px
+
+.products-grid
+  position: relative
+  display: grid
+  grid-template: "img stepone" minmax(400px) "steptwo img" minmax(400px) "img stepthree" minmax(400px) / 1fr 1fr
