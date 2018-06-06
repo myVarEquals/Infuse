@@ -1,0 +1,65 @@
+body, html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+main {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  transition: 0.5s;
+  margin-top: 40px; }
+
+#contact-section {
+  position: relative; }
+
+.contact-box {
+  background-color: white;
+  width: 60%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 110px 0;
+  border: 2px solid #1946ba;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #a3a3c2; }
+
+form {
+  padding: 0 1em;
+  min-width: 290px !important;
+  max-width: 600px !important; }
+  form input, form textarea {
+    border: 1px solid #1946ba !important;
+    width: 100% !important; }
+  form button {
+    width: 100%;
+    margin: 0 0 20px 0;
+    color: white;
+    background-color: #1946ba;
+    border: 2px solid #1946ba;
+    border-radius: 4px; }
+
+.alert {
+  position: relative;
+  margin: 1em; }
+
+.contact-header {
+  padding: 1em 0;
+  color: #1946ba;
+  text-shadow: 2px 2px 1px #39d52d;
+  font-family: "La Belle Aurore", cursive; }
+
+.form-control {
+  padding: 0 4px; }
+
+@media only screen and (min-width: 768px) {
+  #maincontent {
+    margin-top: 80px; } }
+
+/*# sourceMappingURL=contact.css.map */

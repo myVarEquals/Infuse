@@ -70,12 +70,12 @@
     <title>Infused</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Nothing+You+Could+Do|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|La+Belle+Aurore" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="../css/nav.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,16 +83,14 @@
   <body>
 
   	<!-- <img src='../images/InfuseLogo.png'> -->
-  	 <nav id='nav-horizontal' class='navbar sticky-top navbar-expand-md'>
+  	 <nav id='nav-horizontal' class='navbar fixed-top navbar-expand-md'>
   	  	<a class="navbar-brand" href="index.html">
       		<img src="../images/InfuseLogo.png" height="50" alt="">
     	  	</a>
-        	<button class='navbar-toggler custom-toggler' type='button' data-toggle='collapse' data-target='#myNav'>
-          	<span class='navbar-toggler-icon'></span>
-       	</button>
-        <div class='collapse navbar-collapse' id='myNav'>
+
+        <div class='nav-horiz-ul' id='myNav'>
           <!-- Nav Site -->
-          <ul class='navbar-nav ml-auto'>
+          <ul class='navbar-nav'>
             <li class='nav-item'>
               <a class='nav-link' href='about.html'>About</a>
             </li>
@@ -103,7 +101,7 @@
               <a class='nav-link' href='tour.html'>Tour</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='contact.html'>Contact</a>
+              <a class='nav-link' href='contact.php'>Contact</a>
             </li>
           </ul>
         </div>
@@ -124,7 +122,7 @@
   				<li class='sidebar-item'><a href='about.html'>About</a></li>
   				<li class='sidebar-item'><a href='products.html'>Products</a></li>
   				<li class='sidebar-item'><a href='tour.html'>Tour</a></li>
-  				<li class='sidebar-item active'><a href='contact.html'>Contact</a></li>
+  				<li class='sidebar-item active'><a href='contact.php'>Contact</a></li>
   			</ul>
 
   		</nav>
@@ -140,8 +138,8 @@
 
   		<main id='maincontent'>
 
-        <h1 style='margin-top:50px'>Contact</h1>
 
+        <!-- Contact -->
         <div class="container-fluid text-center" id="contact-section">
           <?php if($alertMessage != ''): ?>
             <div class='alert <?php echo $alertMessageClass; ?>'><?php echo $alertMessage; ?></div>
@@ -174,7 +172,7 @@
 
   		<footer class='text-center'>
 
-  			<div class='footergrid text-center'>
+  			<div class='footergrid row justify-content-center text-center'>
 
   				<div class='footernav'>
   					<h4>Nav</h4>
@@ -207,8 +205,10 @@
 
   			</div>
 
-  			<div>Infused LLC 	&copy;</div>
-  			<div>Established 2017</div>
+        <div class='row justify-content-center'>
+  				<div>Infused LLC 	&copy;</div>
+  				<div>Established 2017</div>
+  			</div>
 
   		</footer>
 
