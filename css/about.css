@@ -33,10 +33,11 @@ h5 {
 
 #team {
   position: relative;
-  height: 500px;
-  background-image: url(../images/team.jpg);
+  height: 300px;
+  background-image: url(../images/team1.jpg);
   background-size: cover;
   background-position: top center;
+  background-repeat: no-repeat;
   border-bottom: 2px solid #39d52d; }
 
 .team-msg {

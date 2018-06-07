@@ -20,4 +20,23 @@ main
 .products-grid
   position: relative
   display: grid
-  grid-template: "img stepone" minmax(400px) "steptwo img" minmax(400px) "img stepthree" minmax(400px) / 1fr 1fr
+  grid-template: "img stepone" minmax(400px, auto) "steptwo img" minmax(400px, auto) "img stepthree" minmax(400px,auto) / 1fr 1fr
+
+.step-one-feat-img, .step-two-feat-img, .step-three-feat-img
+  grid-area: img
+
+.step-one-feat-img
+  background:
+    image: url(../images/accessories.png)
+    size: cover
+    position: top center
+
+
+.step-one-lists
+  grid-area: stepone
+
+.step-two-lists
+  grid-area: steptwo
+
+.step-three-lists
+  grid-area: stepthree
