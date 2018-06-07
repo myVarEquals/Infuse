@@ -20,23 +20,49 @@ main {
 .products-grid {
   position: relative;
   display: grid;
-  grid-template: "img stepone" minmax(400px, auto) "steptwo img" minmax(400px, auto) "img stepthree" minmax(400px, auto)/1fr 1fr; }
+  grid-template: "stepone" 300px "imgone" 300px "steptwo" 300px "imgtwo" 300px "stepthree" 300px "imgthree" 300px/1fr; }
 
 .step-one-feat-img, .step-two-feat-img, .step-three-feat-img {
-  grid-area: img; }
-
-.step-one-feat-img {
+  grid-area: imgone;
+  width: 100%;
+  height: 300px;
   background-image: url(../images/accessories.png);
   background-size: cover;
   background-position: top center; }
 
-.step-one-lists {
+.step-two-feat-img {
+  grid-area: imgtwo;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/accessories.png);
+  background-size: cover;
+  background-position: top center; }
+
+.step-three-feat-img {
+  grid-area: imgthree;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/accessories.png);
+  background-size: cover;
+  background-position: top center; }
+
+.step-one {
   grid-area: stepone; }
 
-.step-two-lists {
+.step-two {
   grid-area: steptwo; }
 
-.step-three-lists {
+.step-three {
   grid-area: stepthree; }
+
+.step-one, .step-two, .step-three {
+  display: grid;
+  grid-template: "headers" auto "lists" auto/1fr; }
+  .step-one .stepheaders, .step-two .stepheaders, .step-three .stepheaders {
+    grid-area: headers; }
+  .step-one .steplists, .step-two .steplists, .step-three .steplists {
+    grid-area: lists;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
 
 /*# sourceMappingURL=products.css.map */
