@@ -81,38 +81,47 @@ h1 {
 /* Colors */
 .step-one {
   grid-area: stepone;
-  background: linear-gradient(to bottom right, #39d52d 5%, #4ad93f 5%, #4ad93f 10%, #5edd55 10%, #5edd55 15%, #72e26a 15%, #72e26a 20%, white 20%, white 100%); }
+  background: linear-gradient(to bottom, #39d52d 8%, #4ad93f 8%, #4ad93f 16%, #5edd55 16%, #5edd55 24%, #72e26a 24%, #72e26a 32%, white 32%, white 100%); }
   .step-one h6 {
-    border-bottom: 2px solid #1946ba;
-    width: 50%; }
+    border-bottom: 2px solid #1946ba; }
 
 .step-two {
   grid-area: steptwo;
-  background: linear-gradient(to bottom right, #1946ba 5%, #1c4dca 5%, #1c4dca 10%, #1f56e0 10%, #1f56e0 15%, #3566e3 15%, #3566e3 20%, white 20%, white 100%); }
+  background: linear-gradient(to bottom, #1946ba 8%, #1c4dca 8%, #1c4dca 16%, #1f56e0 16%, #1f56e0 24%, #3566e3 24%, #3566e3 32%, white 32%, white 100%); }
   .step-two h6 {
-    border-bottom: 2px solid #39d52d;
-    width: 50%; }
+    border-bottom: 2px solid #39d52d; }
 
 .step-three {
   grid-area: stepthree;
-  background: linear-gradient(to bottom right, #1946ba 5%, #4ad93f 5%, #4ad93f 10%, #1f56e0 10%, #1f56e0 15%, #72e26a 15%, #72e26a 20%, white 20%, white 100%); }
+  background: linear-gradient(to bottom, #1946ba 8%, #4ad93f 8%, #4ad93f 16%, #1f56e0 16%, #1f56e0 24%, #72e26a 24%, #72e26a 32%, white 32%, white 100%); }
   .step-three h6 {
-    border-bottom: 2px solid #39d52d;
-    width: 50%; }
+    border-bottom: 2px solid #39d52d; }
   .step-three .list:nth-child(2) h6 {
-    border-bottom: 2px solid #1946ba;
-    width: 50%; }
+    border-bottom: 2px solid #1946ba; }
 
 .step-one, .step-two, .step-three {
   display: grid;
   grid-template: "headers" minmax(125px, auto) "lists" auto/1fr; }
   .step-one .stepheaders, .step-two .stepheaders, .step-three .stepheaders {
     grid-area: headers;
-    margin-left: 40%;
-    margin-top: 5%; }
+    text-align: center;
+    margin-top: 10px; }
   .step-one .steplists, .step-two .steplists, .step-three .steplists {
     grid-area: lists;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }
+
+.step-one .stepheaders {
+  color: white; }
+
+.step-two .stepheaders {
+  color: white; }
+
+.step-three .stepheaders {
+  color: white; }
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 0px; } }
 
 /*# sourceMappingURL=products.css.map */

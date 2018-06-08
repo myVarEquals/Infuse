@@ -94,34 +94,31 @@ $green2: rgb(74, 217, 63)
 $green3: rgb(94, 221, 85)
 $green4: rgb(114, 226, 106)
 
+
 .step-one
   grid-area: stepone
-  background: linear-gradient(to bottom right, $green1 5%, /* Top */ $green2 5%, $green2 10%, $green3 10%, $green3 15%, $green4 15%, $green4 20%, white 20%, white 100%)
+  background: linear-gradient(to bottom, $green1 8%, /* Top */ $green2 8%, $green2 16%, $green3 16%, $green3 24%, $green4 24%, $green4 32%, white 32%, white 100%)
 
   h6
     border-bottom: 2px solid $blue1
-    width: 50%
 
 .step-two
   grid-area: steptwo
-  background: linear-gradient(to bottom right, $blue1 5%, /* Top */ $blue2 5%, $blue2 10%, $blue3 10%, $blue3 15%, $blue4 15%, $blue4 20%, white 20%, white 100%)
+  background: linear-gradient(to bottom, $blue1 8%, /* Top */ $blue2 8%, $blue2 16%, $blue3 16%, $blue3 24%, $blue4 24%, $blue4 32%, white 32%, white 100%)
 
   h6
     border-bottom: 2px solid $green1
-    width: 50%
 
 
 .step-three
   grid-area: stepthree
-  background: linear-gradient(to bottom right, $blue1 5%, /* Top */ $green2 5%, $green2 10%, $blue3 10%, $blue3 15%, $green4 15%, $green4 20%, white 20%, white 100%)
+  background: linear-gradient(to bottom, $blue1 8%, /* Top */ $green2 8%, $green2 16%, $blue3 16%, $blue3 24%, $green4 24%, $green4 32%, white 32%, white 100%)
 
   h6
     border-bottom: 2px solid $green1
-    width: 50%
 
   .list:nth-child(2) h6
     border-bottom: 2px solid $blue1
-    width: 50%
 
 
 .step-one, .step-two, .step-three
@@ -130,10 +127,25 @@ $green4: rgb(114, 226, 106)
 
   .stepheaders
     grid-area: headers
-    margin-left: 40%
-    margin-top: 5%
+    text-align: center
+    margin-top: 10px
 
   .steplists
     grid-area: lists
     display: grid
     grid-template-columns: 1fr 1fr 1fr
+
+
+.step-one .stepheaders
+    color: white
+
+.step-two .stepheaders
+    color: white
+
+.step-three .stepheaders
+    color: white
+
+@media only screen and (min-width: 768px)
+
+  main
+    margin-top: 0px
