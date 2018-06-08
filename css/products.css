@@ -17,12 +17,28 @@ main {
   transition: 0.5s;
   margin-top: 40px; }
 
+h1 {
+  margin: 0;
+  padding: 0; }
+
+.product-header {
+  height: 200px; }
+
+.product-header-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.infuseheaderlogo {
+  width: 232px; }
+
 .products-grid {
   position: relative;
   display: grid;
   grid-template: "stepone" 300px "imgone" 300px "steptwo" 300px "imgtwo" 300px "stepthree" 300px "imgthree" 300px/1fr; }
 
-.step-one-feat-img, .step-two-feat-img, .step-three-feat-img {
+.step-one-feat-img {
+  position: relative;
   grid-area: imgone;
   width: 100%;
   height: 300px;
@@ -31,6 +47,7 @@ main {
   background-position: top center; }
 
 .step-two-feat-img {
+  position: relative;
   grid-area: imgtwo;
   width: 100%;
   height: 300px;
@@ -39,6 +56,7 @@ main {
   background-position: top center; }
 
 .step-three-feat-img {
+  position: relative;
   grid-area: imgthree;
   width: 100%;
   height: 300px;
@@ -46,20 +64,52 @@ main {
   background-size: cover;
   background-position: top center; }
 
+.img-caption {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: 100px;
+  border: 2px solid white;
+  background-color: rgba(25, 70, 186, 0.4); }
+  .img-caption p {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* Colors */
 .step-one {
-  grid-area: stepone; }
+  grid-area: stepone;
+  background: linear-gradient(to bottom right, #39d52d 5%, #4ad93f 5%, #4ad93f 10%, #5edd55 10%, #5edd55 15%, #72e26a 15%, #72e26a 20%, white 20%, white 100%); }
+  .step-one h6 {
+    border-bottom: 2px solid #1946ba;
+    width: 50%; }
 
 .step-two {
-  grid-area: steptwo; }
+  grid-area: steptwo;
+  background: linear-gradient(to bottom right, #1946ba 5%, #1c4dca 5%, #1c4dca 10%, #1f56e0 10%, #1f56e0 15%, #3566e3 15%, #3566e3 20%, white 20%, white 100%); }
+  .step-two h6 {
+    border-bottom: 2px solid #39d52d;
+    width: 50%; }
 
 .step-three {
-  grid-area: stepthree; }
+  grid-area: stepthree;
+  background: linear-gradient(to bottom right, #1946ba 5%, #4ad93f 5%, #4ad93f 10%, #1f56e0 10%, #1f56e0 15%, #72e26a 15%, #72e26a 20%, white 20%, white 100%); }
+  .step-three h6 {
+    border-bottom: 2px solid #39d52d;
+    width: 50%; }
+  .step-three .list:nth-child(2) h6 {
+    border-bottom: 2px solid #1946ba;
+    width: 50%; }
 
 .step-one, .step-two, .step-three {
   display: grid;
-  grid-template: "headers" auto "lists" auto/1fr; }
+  grid-template: "headers" minmax(125px, auto) "lists" auto/1fr; }
   .step-one .stepheaders, .step-two .stepheaders, .step-three .stepheaders {
-    grid-area: headers; }
+    grid-area: headers;
+    margin-left: 40%;
+    margin-top: 5%; }
   .step-one .steplists, .step-two .steplists, .step-three .steplists {
     grid-area: lists;
     display: grid;
