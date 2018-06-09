@@ -7,8 +7,7 @@ body {
 
 ul {
   margin: 0;
-  padding: 0;
-  list-style-image: url(../images/infusebullet.png); }
+  padding: 0; }
 
 main {
   position: relative;
@@ -81,37 +80,49 @@ h1 {
 
 /* Colors */
 .step-one {
-  grid-area: stepone;
-  background: linear-gradient(to bottom, #39d52d 8%, #4ad93f 8%, #4ad93f 16%, #5edd55 16%, #5edd55 24%, #72e26a 24%, #72e26a 32%, white 32%, white 100%); }
+  grid-area: stepone; }
+  .step-one .stepheaders {
+    background: linear-gradient(to bottom, #39d52d 25%, #4ad93f 25%, #4ad93f 50%, #5edd55 50%, #5edd55 75%, #72e26a 75%, #72e26a 100%); }
   .step-one h6 {
     border-bottom: 2px solid #1946ba; }
 
 .step-two {
-  grid-area: steptwo;
-  background: linear-gradient(to bottom, #1946ba 8%, #1c4dca 8%, #1c4dca 16%, #1f56e0 16%, #1f56e0 24%, #3566e3 24%, #3566e3 32%, white 32%, white 100%); }
+  grid-area: steptwo; }
+  .step-two .stepheaders {
+    background: linear-gradient(to bottom, #1946ba 25%, #1c4dca 25%, #1c4dca 50%, #1f56e0 50%, #1f56e0 75%, #3566e3 75%, #3566e3 100%); }
   .step-two h6 {
     border-bottom: 2px solid #39d52d; }
 
 .step-three {
-  grid-area: stepthree;
-  background: linear-gradient(to bottom, #1946ba 8%, #4ad93f 8%, #4ad93f 16%, #1f56e0 16%, #1f56e0 24%, #72e26a 24%, #72e26a 32%, white 32%, white 100%); }
+  grid-area: stepthree; }
+  .step-three .stepheaders {
+    background: linear-gradient(to bottom, #1946ba 25%, #4ad93f 25%, #4ad93f 50%, #1f56e0 50%, #1f56e0 75%, #72e26a 75%, #72e26a 100%); }
   .step-three h6 {
     border-bottom: 2px solid #39d52d; }
-  .step-three .list:nth-child(2) h6 {
+  .step-three .list:nth-child(2) h6, .step-three .list:nth-child(3) h6, .step-three .list:nth-child(6) h6 {
     border-bottom: 2px solid #1946ba; }
 
 .step-one, .step-two, .step-three {
   display: grid;
-  grid-template: "headers" minmax(125px, auto) "lists" auto/1fr; }
+  grid-template: "headers" 65px "lists" auto/1fr; }
   .step-one .stepheaders, .step-two .stepheaders, .step-three .stepheaders {
     grid-area: headers;
-    text-align: center;
-    margin-top: 10px; }
+    text-align: center; }
   .step-one .steplists, .step-two .steplists, .step-three .steplists {
     grid-area: lists;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr; }
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto; }
+  .step-one .list, .step-two .list, .step-three .list {
+    padding-left: 23px;
+    padding-right: 10px;
+    margin-top: 20px; }
+  .step-one ul, .step-two ul, .step-three ul {
+    list-style-image: url(../images/infusebullet.png); }
+  .step-one h6, .step-two h6, .step-three h6 {
+    font-size: 0.75em; }
+  .step-one li, .step-two li, .step-three li {
+    font-size: 0.75em; }
 
 .step-one .stepheaders {
   color: white; }
@@ -124,6 +135,22 @@ h1 {
 
 @media only screen and (min-width: 768px) {
   main {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+
+  .step-one .steplists, .step-two .steplists, .step-three .steplists {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .step-one .list:nth-child(2) h6, .step-one .list:nth-child(4) h6, .step-one .list:nth-child(6) h6, .step-two .list:nth-child(2) h6, .step-two .list:nth-child(4) h6, .step-two .list:nth-child(6) h6, .step-three .list:nth-child(2) h6, .step-three .list:nth-child(4) h6, .step-three .list:nth-child(6) h6 {
+    border-bottom: 2px solid #1946ba; }
+  .step-one .list:nth-child(3) h6, .step-two .list:nth-child(3) h6, .step-three .list:nth-child(3) h6 {
+    border-bottom: 2px solid #39d52d; }
+  .step-one h6, .step-two h6, .step-three h6 {
+    font-size: 1em; }
+  .step-one li, .step-two li, .step-three li {
+    font-size: 1em; } }
+@media only screen and (min-width: 900px) {
+  .step-one h6, .step-two h6, .step-three h6 {
+    font-size: 1.25em; }
+  .step-one li, .step-two li, .step-three li {
+    font-size: 1.25em; } }
 
 /*# sourceMappingURL=products.css.map */

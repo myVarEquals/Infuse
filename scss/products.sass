@@ -8,7 +8,7 @@ body
 ul
   margin: 0
   padding: 0
-  list-style-image: url(../images/infusebullet.png)
+
 
 main
   position: relative
@@ -98,14 +98,17 @@ $green4: rgb(114, 226, 106)
 
 .step-one
   grid-area: stepone
-  background: linear-gradient(to bottom, $green1 8%, /* Top */ $green2 8%, $green2 16%, $green3 16%, $green3 24%, $green4 24%, $green4 32%, white 32%, white 100%)
 
+  .stepheaders
+    background: linear-gradient(to bottom, $green1 25%, /* Top */ $green2 25%, $green2 50%, $green3 50%, $green3 75%, $green4 75%, $green4 100%)
   h6
     border-bottom: 2px solid $blue1
 
 .step-two
   grid-area: steptwo
-  background: linear-gradient(to bottom, $blue1 8%, /* Top */ $blue2 8%, $blue2 16%, $blue3 16%, $blue3 24%, $blue4 24%, $blue4 32%, white 32%, white 100%)
+
+  .stepheaders
+    background: linear-gradient(to bottom, $blue1 25%, /* Top */ $blue2 25%, $blue2 50%, $blue3 50%, $blue3 75%, $blue4 75%, $blue4 100%)
 
   h6
     border-bottom: 2px solid $green1
@@ -113,30 +116,44 @@ $green4: rgb(114, 226, 106)
 
 .step-three
   grid-area: stepthree
-  background: linear-gradient(to bottom, $blue1 8%, /* Top */ $green2 8%, $green2 16%, $blue3 16%, $blue3 24%, $green4 24%, $green4 32%, white 32%, white 100%)
+
+  .stepheaders
+    background: linear-gradient(to bottom, $blue1 25%, /* Top */ $green2 25%, $green2 50%, $blue3 50%, $blue3 75%, $green4 75%, $green4 100%)
 
   h6
     border-bottom: 2px solid $green1
 
-  .list:nth-child(2) h6
+  .list:nth-child(2) h6, .list:nth-child(3) h6, .list:nth-child(6) h6
     border-bottom: 2px solid $blue1
 
 
 .step-one, .step-two, .step-three
   display: grid
-  grid-template: "headers" minmax(125px, auto) "lists" auto / 1fr
+  grid-template: "headers" 65px "lists" auto / 1fr
 
   .stepheaders
     grid-area: headers
     text-align: center
-    margin-top: 10px
 
   .steplists
     grid-area: lists
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: 1fr
+    grid-template-columns: 1fr 1fr
+    grid-auto-rows: auto
 
+  .list
+    padding-left: 23px
+    padding-right: 10px
+    margin-top: 20px
+
+  ul
+    list-style-image: url(../images/infusebullet.png)
+
+  h6
+    font-size: 0.75em
+
+  li
+    font-size: 0.75em
 
 .step-one .stepheaders
     color: white
@@ -151,3 +168,30 @@ $green4: rgb(114, 226, 106)
 
   main
     margin-top: 0px
+
+  .step-one, .step-two, .step-three
+
+    .steplists
+      grid-template-columns: 1fr 1fr 1fr
+
+    .list:nth-child(2) h6, .list:nth-child(4) h6, .list:nth-child(6) h6
+      border-bottom: 2px solid $blue1
+
+    .list:nth-child(3) h6
+      border-bottom: 2px solid $green1
+
+    h6
+      font-size: 1em
+
+    li
+      font-size: 1em
+
+@media only screen and (min-width: 900px)
+
+    .step-one, .step-two, .step-three
+
+      h6
+        font-size: 1.25em
+
+      li
+        font-size: 1.25em
