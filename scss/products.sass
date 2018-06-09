@@ -8,6 +8,7 @@ body
 ul
   margin: 0
   padding: 0
+  list-style-image: url(../images/infusebullet.png)
 
 main
   position: relative
@@ -36,7 +37,7 @@ h1
 .products-grid
   position: relative
   display: grid
-  grid-template: "stepone" 300px "imgone" 300px "steptwo" 300px "imgtwo" 300px "stepthree" 300px "imgthree" 300px / 1fr
+  grid-template: "stepone" minmax(300px, auto) "imgone" 300px "steptwo" minmax(300px, auto) "imgtwo" 300px "stepthree" minmax(300px, auto) "imgthree" 300px / 1fr
 
 .step-one-feat-img
   position: relative
@@ -134,6 +135,7 @@ $green4: rgb(114, 226, 106)
     grid-area: lists
     display: grid
     grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr
 
 
 .step-one .stepheaders
