@@ -115,7 +115,7 @@ h1 {
     grid-auto-rows: auto; }
   .step-one .list, .step-two .list, .step-three .list {
     padding-left: 23px;
-    padding-right: 10px;
+    padding-right: 20px;
     margin-top: 20px; }
   .step-one ul, .step-two ul, .step-three ul {
     list-style-image: url(../images/infusebullet.png); }
@@ -132,6 +132,9 @@ h1 {
 
 .step-three .stepheaders {
   color: white; }
+
+.viewall {
+  margin: 15px 0px; }
 
 @media only screen and (min-width: 768px) {
   main {
