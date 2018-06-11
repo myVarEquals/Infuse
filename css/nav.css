@@ -7,6 +7,9 @@ body, html {
 ul {
   list-style: none; }
 
+a {
+  text-decoration: none !important; }
+
 #nav-horizontal {
   display: none;
   height: 80px;

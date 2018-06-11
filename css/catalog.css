@@ -14,7 +14,8 @@ main {
   width: 100%;
   max-width: 900px;
   position: relative;
-  background-color: white; }
+  background-color: white;
+  margin-top: 40px; }
   main h6 {
     font-size: 0.75em;
     border-bottom: 2px solid #1946ba; }
@@ -50,11 +51,21 @@ main {
 .bases {
   grid-area: bases;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-auto-rows: auto; }
   .bases .list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-auto-rows: auto; }
+
+@media only screen and (min-width: 600px) {
+  .raw {
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  .bases {
+    grid-template-columns: 1fr 1fr; } }
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 80px; } }
 
 /*# sourceMappingURL=catalog.css.map */

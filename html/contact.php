@@ -95,6 +95,9 @@
               <a class='nav-link' href='about.html'>About</a>
             </li>
             <li class='nav-item'>
+  						<a class='nav-link' href="info.html">Info</a>
+  					</li>
+            <li class='nav-item'>
               <a class='nav-link' href='products.html'>Products</a>
             </li>
             <li class='nav-item'>
@@ -120,6 +123,7 @@
 
   			<ul class='sidebar-links'>
   				<li class='sidebar-item'><a href='about.html'>About</a></li>
+          <li class='sidebar-item'><a href='info.html'>Info</a></li>
   				<li class='sidebar-item'><a href='products.html'>Products</a></li>
   				<li class='sidebar-item'><a href='tour.html'>Tour</a></li>
   				<li class='sidebar-item active'><a href='contact.php'>Contact</a></li>
@@ -178,6 +182,7 @@
   					<h4>Nav</h4>
   					<ul>
               <li><a href='about.html'>About</a></li>
+              <li><a href='info.html'>Info</a></li>
   						<li><a href='products.html'>Products</a></li>
   						<li><a href='tour.html'>Tour</a></li>
   						<li><a href='contact.php'>Contact</a></li>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="../css/nav.css">
-    <link rel="stylesheet" type="text/css" href="../css/products.css">
+    <link rel="stylesheet" type="text/css" href="../css/catalog.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
   <body>
 
   	<!-- <img src='../images/InfuseLogo.png'> -->
-  	 <nav id='nav-horizontal' class='navbar sticky-top navbar-expand-md'>
+  	 <nav id='nav-horizontal' class='navbar fixed-top navbar-expand-md'>
   	  	<a class="navbar-brand" href="index.html">
       		<img src="../images/InfuseLogo.png" height="50" alt="">
     	  	</a>
@@ -27,6 +27,9 @@
             <li class='nav-item'>
               <a class='nav-link' href='about.html'>About</a>
             </li>
+            <li class='nav-item'>
+  						<a class='nav-link' href="info.html">Info</a>
+  					</li>
             <li class='nav-item'>
               <a class='nav-link' href='products.html'>Products</a>
             </li>
@@ -47,14 +50,15 @@
   				<i id="sidebar-close" class="fa fa-window-close"></i>
 
           <a href='index.html'>
-			      <img id='sidebar-brand' src='../images/InfuseLogo.png' height="30">
+  				  <img id='sidebar-brand' src='../images/InfuseLogo.png' height="30">
           </a>
   			</div>
 
   			<ul class='sidebar-links'>
   				<li class='sidebar-item'><a href='about.html'>About</a></li>
-  				<li class='sidebar-item active'><a href='products.html'>Products</a></li>
-  				<li class='sidebar-item'><a href='tour.html'>Tour</a></li>
+          <li class='sidebar-item'><a href='info.html'>Info</a></li>
+  				<li class='sidebar-item'><a href='products.html'>Products</a></li>
+  				<li class='sidebar-item tour'><a href='tour.html'>Tour</a></li>
   				<li class='sidebar-item'><a href='contact.php'>Contact</a></li>
   			</ul>
 
@@ -64,229 +68,390 @@
   				<i id='burger' class="fas fa-bars"></i>
   				<div id='sidebar-open' class='text-center'>
             <a href='index.html'>
-			        <img id='side-logo' class='mx-auto' src='../images/InfuseLogo.png'>
+  					  <img id='side-logo' class='mx-auto' src='../images/InfuseLogo.png'>
             </a>
   				</div>
   		</header>
 
   		<main id='maincontent'>
 
-        <div class='product-header text-center'>
-
-          <div class='product-header-wrapper'>
-            <h1>How do you</h1>
-            <img class='infuseheaderlogo d-block mx-auto' src='../images/InfuseLogo.png'>
-          </div>
-
-
+        <div class="catalog-header">
+          <h1>Products</h1>
         </div>
 
-        <div class='products-grid'>
-
-          <!-- Step One -->
-          <div class='step-one-feat-img'>
-            <div class='img-caption'>
-              <p>Blueberry</p>
-            </div>
-          </div>
-
-          <div class="step-one">
-
-            <div class='stepheaders'>
-              <h4>Pick your essential oils</h4>
-              <h5>We recommend three</h5>
-            </div>
-
-            <div class='steplists'>
-              <div class='list'>
+        <div class="catalog-grid">
+          <div class="catalog-groups">
+            <h1>Essential Oils</h1>
+            <div class="oils">
+              <!-- Pure -->
+              <div class='list pure'>
                 <h6>100% Pure Oils</h6>
                 <ul>
                   <li>Bergamot-Bergaptene Free</li>
-                  <li>Coriander India</li>
+                  <li>Cedarwood Texas</li>
+                  <li>Citronella Java</li>
+                  <li>Cinnamon Bark</li>
+                  <li>Coffee</li>
+                  <li>Eucalyptus Blue Mallee</li>
+                  <li>Fennel Sweet</li>
                   <li>Grapefruit Pink</li>
-                  <li>Lavander French</li>
+                  <li>Grapefruit White</li>
+                  <li>Lavender Bulgarian</li>
+                  <li>Lavender French</li>
+                  <li>Lavender South Africa</li>
+                  <li>Tangerine</li>
+                  <li>Tarragon</li>
+                  <li>Tea Tree Australian</li>
+                  <li>Ylang Ylang #1</li>
                   <li>Ylang Ylang #3</li>
                 </ul>
               </div>
-              <div class='list'>
+
+              <!-- Organic -->
+              <div class='list organic'>
                 <h6>Organic Oils</h6>
                 <ul>
+                  <li>Caramom</li>
                   <li>Cedarwood Atlas</li>
+                  <li>Citronella</li>
+                  <li>Clove Bud</li>
+                  <li>Eucalyptus Blue Mallee</li>
+                  <li>Eucalyptus Lemon</li>
+                  <li>Eucalyptus Globulus</li>
                   <li>Frankincense</li>
-                  <li>Geranium</li>
                   <li>Lemon</li>
+                  <li>Lemongrass</li>
+                  <li>Lime</li>
+                  <li>Orange Sweet</li>
+                  <li>Oregano</li>
+                  <li>Patchouli</li>
+                  <li>Pepper Black</li>
+                  <li>Peppermint Japanese</li>
+                  <li>Peppermint Supreme</li>
+                  <li>Pine</li>
+                  <li>Rosemary</li>
+                  <li>Sage</li>
+                  <li>Spearmint</li>
+                  <li>Spikenard</li>
+                  <li>Spruce Black</li>
+                  <li>Star Anise</li>
                   <li>Tea Tree</li>
+                  <li>Thyme</li>
+                  <li>Wintergreen</li>
                 </ul>
               </div>
-              <div class='list'>
+
+              <!-- 3% Dilutions -->
+              <div class="list dilutions">
                 <h6>3% Dilutions</h6>
                 <ul>
+                  <li>Chamomile German Blue</li>
                   <li>Chamomile Roman</li>
+                  <li>Jasmine Grandiflorum Abs.</li>
                   <li>Jasmine Sambac Abs.</li>
+                  <li>Lotus Pink Abs.</li>
                   <li>Melissa Leaf</li>
+                  <li>Neroli</li>
                   <li>Rose Bulgarian Abs.</li>
                   <li>Sandalwood El</li>
                 </ul>
               </div>
             </div>
 
-            <div class='viewall mx-auto'>View all <a href='#'>Essential Oils</a></div>
-
-          </div>
-
-          <!-- Step Two -->
-          <div class='step-two-feat-img'>
-            <div class='img-caption'>
-              <p>Coffee</p>
-            </div>
-          </div>
-
-          <div class="step-two">
-
-            <div class='stepheaders'>
-              <h4>Add your raw ingredients</h4>
-              <h5>(optional)</h5>
-            </div>
-
-            <div class='steplists'>
-              <div class='list'>
-                <h6>Carrier Oils</h6>
-                <ul>
-                  <li>Argan Organic</li>
-                  <li>Jojoba Organic</li>
-                  <li>Marula</li>
-                </ul>
-              </div>
-              <div class='list'>
-                <h6>Butters</h6>
-                <ul>
-                  <li>Avocado</li>
-                  <li>Cocoa</li>
-                  <li>Mango</li>
-                </ul>
-              </div>
-              <div class='list'>
-                <h6>Clays</h6>
-                <ul>
-                  <li>Bentonite</li>
-                  <li>Diatomaceous Earth</li>
-                  <li>White Kaolin</li>
-                </ul>
-              </div>
-              <div class='list'>
+            <!-- Raw Ingr -->
+            <h1>Raw Bar</h1>
+            <div class="raw">
+              <!-- Salts -->
+              <div class="list">
                 <h6>Salts</h6>
                 <ul>
+                  <li>Black Lava</li>
                   <li>Dead Sea</li>
                   <li>Epsom</li>
-                  <li>Pink Himalayan</li>
+                  <li>Grey Sea</li>
+                  <li>Himalayan</li>
+                  <li>Magnesium Chloride</li>
+                  <li>Red Algae</li>
+                  <li>Sea Salt</li>
                 </ul>
               </div>
-              <div class='list'>
+              <!-- Sugars -->
+              <div class="list">
                 <h6>Sugars</h6>
                 <ul>
                   <li>Coconut</li>
+                  <li>Dark Brown Cane</li>
                   <li>Date</li>
-                  <li>Honey Crystals</li>
+                  <li>Demerara</li>
+                  <li>Dextrose</li>
+                  <li>Maple Sugar Powder</li>
                 </ul>
               </div>
-              <div class='list'>
+              <!-- Exfoliants -->
+              <div class="list">
+                <h6>Exfoliants</h6>
+                <ul>
+                  <li>Almond Meal</li>
+                  <li>Apricot Meal</li>
+                  <li>Blueberry Fruit Fibers</li>
+                  <li>Grape Seeds</li>
+                  <li>Honey Crystals</li>
+                  <li>Kiwi Seeds</li>
+                  <li>Poppy Seeds</li>
+                  <li>Pumice, Ground</li>
+                  <li>Tapioca Pearls</li>
+                  <li>Walnut Shells</li>
+                </ul>
+              </div>
+              <!-- Clays -->
+              <div class="list">
+                <h6>Clays</h6>
+                <ul>
+                  <li>Diatomaceous Earth</li>
+                  <li>French Green</li>
+                  <li>French Yellow</li>
+                  <li>Fullers Earth</li>
+                  <li>Pink Kaolin</li>
+                  <li>Red Kaolin</li>
+                  <li>Rhassoul</li>
+                  <li>White Kaolin</li>
+                </ul>
+              </div>
+              <!-- Nat Carrier -->
+              <div class="list">
+                <h6>Natural Carrier Oils</h6>
+                <ul>
+                  <li>Avocado</li>
+                  <li>Hemp Seed</li>
+                  <li>Pomegranate</li>
+                </ul>
+              </div>
+              <!-- Organic Carrier -->
+              <div class="list">
+                <h6>Organic Carrier Oils</h6>
+                <ul>
+                  <li>Almond Sweet</li>
+                  <li>Coconut Virgin</li>
+                  <li>Jojoba Clear Deoderized</li>
+                  <li>Sunflower</li>
+                </ul>
+              </div>
+              <!-- Powdered Milk -->
+              <div class="list">
                 <h6>Powdered Milk</h6>
                 <ul>
-                  <li>Buttermilk</li>
+                  <li>Butter Milk</li>
                   <li>Goat's Milk</li>
                   <li>Whole Milk</li>
-                </ul>
-              </div>
-              <div class='list'>
-                <h6>Additives</h6>
-                <ul>
-                  <li>Activated Charcoal</li>
-                  <li>Keratin</li>
-                  <li>Retinal Microcaps</li>
+                  <li>Yogurt Powder</li>
                 </ul>
               </div>
             </div>
 
-            <div class='viewall mx-auto'>View all <a href='#'>Raw Ingredients</a></div>
+            <!-- Bases -->
+            <h1>Bases</h1>
+            <div class="bases">
+              <!-- Hair -->
+              <div class="list">
 
-          </div>
+                <div class="base-list">
+                  <h6>Hair</h6>
+                  <ul>
+                    <li><a href='#'>Blueberry Aloe Gel</a></li>
+                    <li><a href='#'>Liquid Facial Cleanser</a></li>
+                    <li><a href='#'>Lip Balm</a></li>
+                    <li><a href='#'>Oil Based Makeup Remover</a></li>
+                    <li><a href='#'>Shaving Gel</a></li>
+                    <li><a href='#'>Shaving Oil</a></li>
+                    <li><a href='#'>Simple Aloe Gel</a></li>
+                    <li><a href='#'>Soothing Shaving Creme</a></li>
+                    <li><a href='#'>Vegan Lip Balm</a></li>
+                  </ul>
+                </div>
 
-          <!-- Step Three -->
-          <div class='step-three-feat-img'>
-            <div class='img-caption'>
-              <p>Aloe</p>
-            </div>
-          </div>
+                <div class="base-size">
+                  <h6>Size</h6>
+                  <ul>
+                    <li>12oz</li>
+                    <li>2/4oz</li>
+                    <li>4.5g</li>
+                    <li>2/4oz</li>
+                    <li>12oz</li>
+                    <li>2/4oz</li>
+                    <li>12oz</li>
+                    <li>12oz</li>
+                    <li>4.5g</li>
+                  </ul>
+                </div>
 
-          <div class="step-three">
-
-            <div class='stepheaders'>
-              <h4>Infuse!</h4>
-              <h5>Blend your choices</h5>
-            </div>
-
-            <div class='steplists'>
-              <div class='list'>
-                <h6>Hair</h6>
-                <ul>
-                  <li>Shampoo</li>
-                  <li>Dry Shampoo</li>
-                  <li>Conditioner</li>
-                  <li>Detangler Spray</li>
-                </ul>
               </div>
-              <div class='list'>
-                <h6>Soaps</h6>
-                <ul>
-                  <li>Bar Soaps</li>
-                  <li>Bubble Bath</li>
-                  <li>Foaming Body Wash</li>
-                  <li>Shower Gel</li>
-                </ul>
+
+              <!-- Soaps -->
+              <div class="list">
+                <div class="base-list">
+                  <h6>Soaps</h6>
+                  <ul>
+                    <li><a href='#'>Aloe Vera Bar</a></li>
+                    <li><a href='#'>Bubble Bath</a></li>
+                    <li><a href='#'>Castile Extra Thick Liquid Soap</a></li>
+                    <li><a href='#'>Castile Bar</a></li>
+                    <li><a href='#'>Ecosuds</a></li>
+                    <li><a href='#'>Foaming Body Wash</a></li>
+                    <li><a href='#'>Fresh Honey Bar</a></li>
+                    <li><a href='#'>Goat's Milk &amp; Shae Butter Gel</a></li>
+                    <li><a href='#'>Goat's Milk Bar</a></li>
+                    <li><a href='#'>Hemp Body Wash</a></li>
+                    <li><a href='#'>Hemp Bar</a></li>
+                    <li><a href='#'>African Black Liquid Soap</a></li>
+                    <li><a href='#'>Naturally Clear Bar</a></li>
+                    <li><a href='#'>Oatmeal Bar</a></li>
+                    <li><a href='#'>Olive Oil Bar</a></li>
+                    <li><a href='#'>Shave Bar</a></li>
+                  </ul>
+                </div>
+
+                <div class="base-size">
+                  <h6>Size</h6>
+                  <ul>
+                    <li>4oz</li>
+                    <li>12oz</li>
+                    <li>12oz</li>
+                    <li>4oz</li>
+                    <li>12oz</li>
+                    <li>12oz</li>
+                    <li>4oz</li>
+                    <li>12oz</li>
+                    <li>4oz</li>
+                    <li>12oz</li>
+                    <li>4oz</li>
+                    <li>12oz</li>
+                    <li>4oz</li>
+                    <li>4oz</li>
+                    <li>4oz</li>
+                    <li>4oz</li>
+                  </ul>
+                </div>
               </div>
-              <div class='list'>
+
+              <!-- Face -->
+              <div class="list">
+                <div class="base-list">
                 <h6>Face</h6>
-                <ul>
-                  <li>Facial Cleanser</li>
-                  <li>Lip Balm</li>
-                  <li>Make Up Remover</li>
-                  <li>Shaving Gel/Cream/Oil</li>
-                </ul>
+                  <ul>
+                    <li><a href='#'>Blueberry Aloe Gel</a></li>
+                    <li><a href='#'>Liquid Facial Cleanser</a></li>
+                    <li><a href='#'>Lip Balm</a></li>
+                    <li><a href='#'>Oil Based Makeup Remover</a></li>
+                    <li><a href='#'>Shaving Gel</a></li>
+                    <li><a href='#'>Shaving Oil</a></li>
+                    <li><a href='#'>Simple Aloe Gel</a></li>
+                    <li><a href='#'>Soothing Shaving Creme</a></li>
+                    <li><a href='#'>Vegan Lip Balm</a></li>
+                  </ul>
+                </div>
+
+                <div class="base-size">
+                  <h6>Size</h6>
+                  <ul>
+                    <li>12oz</li>
+                    <li>2/4oz</li>
+                    <li>4.5g</li>
+                    <li>2/4oz</li>
+                    <li>12oz</li>
+                    <li>2/4oz</li>
+                    <li>12oz</li>
+                    <li>12oz</li>
+                    <li>4.5g</li>
+                  </ul>
+                </div>
               </div>
-              <div class='list'>
-                <h6>Lotion</h6>
-                <ul>
-                  <li>After Shave</li>
-                  <li>Beeswax</li>
-                  <li>Facial Cream</li>
-                  <li>Thick Body Cream</li>
-                  <li>Sprayable Lotion</li>
-                </ul>
+
+              <!-- Lotion -->
+              <div class="list">
+                <div class="base-list">
+                  <h6>Lotion</h6>
+                  <ul>
+                    <li><i class="fas fa-info-circle"></i><a href='#'> AHAs After Shave Lotion</a></li>
+                    <li><i class="fas fa-info-circle"></i><a href='#'> AHAs Creme</a></li>
+                    <li><a href='#'>Beeswax Lotion</a></li>
+                    <li><a href='#'>Light Weight Sprayable Lotion</a></li>
+                    <li><a href='#'>Facial Cream</a></li>
+                    <li><a href='#'>Thick Body Cream</a></li>
+                  </ul>
+                </div>
+
+                <div class="base-size">
+                  <h6>Size</h6>
+                  <ul>
+                    <li>12oz</li>
+                    <li>12oz</li>
+                    <li>12oz</li>
+                    <li>2/4oz</li>
+                    <li>12oz</li>
+                    <li>12oz</li>
+                  </ul>
+                </div>
               </div>
-              <div class='list'>
+
+              <!-- Personal Scent -->
+              <div class="list">
+
+                <div class="base-list">
                 <h6>Personal Scent</h6>
-                <ul>
-                  <li>Essential Oil Blend</li>
-                  <li>Room Spray</li>
-                  <li>Linen Spray</li>
-                  <li>All Purpose Cleaner</li>
-                </ul>
+                  <ul>
+                    <li><a href='#'>Custom Essential Oil Blend</a></li>
+                    <li><a href='#'>Room Spray</a></li>
+                    <li><a href='#'>Linen Spray</a></li>
+                    <li><a href='#'>All Purpose Cleaner</a></li>
+                  </ul>
+                </div>
+
+                <div class="base-size">
+                  <h6>Size</h6>
+                  <ul>
+                    <li>10ml</li>
+                    <li>2/4oz</li>
+                    <li>2/4oz</li>
+                    <li>4oz</li>
+                  </ul>
+                </div>
               </div>
-              <div class='list'>
-                <h6>Butters</h6>
-                <ul>
-                  <li>Aloe</li>
-                  <li>Avocado</li>
-                  <li>Blueberry Seed</li>
-                  <li>Cocoa</li>
-                  <li>Mango</li>
-                  <li>Shae</li>
-                </ul>
+
+              <!-- Butters -->
+              <div class="list">
+                <div class='base-list'>
+                  <h6>Butters</h6>
+                  <ul>
+                    <li>Aloe</li>
+                    <li>Avocado</li>
+                    <li>Blueberry Seed Organic</li>
+                    <li>Cocoa</li>
+                    <li>Coffee</li>
+                    <li>Mango</li>
+                    <li>Orange</li>
+                    <li>Pumpkin Seed</li>
+                    <li>Shea</li>
+                    <li>Tangerine</li>
+                  </ul>
+                </div>
               </div>
+
+              <!-- Additives -->
+              <div class="list">
+                <div class='base-list'>
+                  <h6>Additives</h6>
+                  <ul>
+                    <li>Foaming Silk Amino Acids</li>
+                    <li>Hydrolyzed Oat Protein</li>
+                    <li>Menthol Crystals</li>
+                    <li>Seaweed Extract</li>
+                    <li>Vitamin E T-50 Mixed Tocopherols</li>
+                    <li>Vitamin E Acetate</li>
+                  </ul>
+              </div>
+              </div>
+
             </div>
-
-            <div class='viewall mx-auto'>View all <a href='#'>Bases</a></div>
-
           </div>
 
         </div>
@@ -302,7 +467,8 @@
   				<div class='footernav'>
   					<h4>Nav</h4>
   					<ul>
-  						<li><a href='about.html'>About</a></li>
+              <li><a href='about.html'>About</a></li>
+              <li><a href='info.html'>Info</a></li>
   						<li><a href='products.html'>Products</a></li>
   						<li><a href='tour.html'>Tour</a></li>
   						<li><a href='contact.php'>Contact</a></li>
