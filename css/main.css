@@ -1,9 +1,6 @@
 body, html {
   height: 100%;
-  width: 100; }
-
-body {
-  background-color: rgba(0, 0, 0, 0.2); }
+  width: 100%; }
 
 ul {
   margin: 0;
@@ -31,6 +28,9 @@ main {
   background-color: rgba(0, 0, 0, 0.2); }
 
 #landingHeaderWrapper, #tourwrapper {
+  transition: .5s ease; }
+
+#landingHeaderWrapper, #tourwrapper {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -38,7 +38,13 @@ main {
   height: 60px;
   width: 180px;
   background-color: rgba(255, 255, 255, 0.4);
-  border: 1px solid white; }
+  border: 2px solid white; }
+  #landingHeaderWrapper:hover, #tourwrapper:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: .5s ease; }
+    #landingHeaderWrapper:hover #landingHeader, #landingHeaderWrapper:hover #tourheader, #tourwrapper:hover #landingHeader, #tourwrapper:hover #tourheader {
+      color: white;
+      transition: .5s ease; }
 
 #landingHeader, #tourheader {
   margin: 0;

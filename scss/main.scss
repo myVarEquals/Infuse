@@ -1,11 +1,8 @@
 body, html {
 	height: 100%;
-	width: 100;
+	width: 100%;
 }
 
-body {
-	background-color: rgba(0,0,0,0.2);
-}
 
 ul {
 	margin: 0;
@@ -38,6 +35,11 @@ main {
 	background-color: rgba(0,0,0,0.2);
 }
 
+#landingHeaderWrapper,#tourwrapper {
+	transition: .5s ease;
+}
+
+
 #landingHeaderWrapper, #tourwrapper {
 	position: absolute;
 	top: 70%;
@@ -46,7 +48,20 @@ main {
 	height: 60px;
 	width: 180px;
 	background-color: rgba(255,255,255,0.4);
-	border: 1px solid white;
+	border: 2px solid white;
+
+	&:hover {
+		background-color: rgba(0,0,0,0.8);
+		transition: .5s ease;
+
+		#landingHeader,#tourheader {
+			color: white;
+			transition: .5s ease;
+		}
+
+
+
+	}
 }
 
 #landingHeader, #tourheader {
