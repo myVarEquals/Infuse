@@ -1,0 +1,156 @@
+body, html {
+  height: 100%;
+  width: 100%; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+main {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  transition: 0.5s;
+  margin-top: 40px; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+.product-header {
+  height: 200px; }
+
+.product-header-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.infuseheaderlogo {
+  width: 232px; }
+
+.products-grid {
+  position: relative;
+  display: grid;
+  grid-template: "stepone" minmax(300px, auto) "imgone" 300px "steptwo" minmax(300px, auto) "imgtwo" 300px "stepthree" minmax(300px, auto) "imgthree" 300px/1fr; }
+
+.step-one-feat-img {
+  position: relative;
+  grid-area: imgone;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/accessories.png);
+  background-size: cover;
+  background-position: top center; }
+
+.step-two-feat-img {
+  position: relative;
+  grid-area: imgtwo;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/accessories.png);
+  background-size: cover;
+  background-position: top center; }
+
+.step-three-feat-img {
+  position: relative;
+  grid-area: imgthree;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/accessories.png);
+  background-size: cover;
+  background-position: top center; }
+
+.img-caption {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: 100px;
+  border: 2px solid white;
+  background-color: rgba(25, 70, 186, 0.4); }
+  .img-caption p {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/* Colors */
+.step-one {
+  grid-area: stepone; }
+  .step-one .stepheaders {
+    background: linear-gradient(to bottom, #39d52d 25%, #4ad93f 25%, #4ad93f 50%, #5edd55 50%, #5edd55 75%, #72e26a 75%, #72e26a 100%); }
+  .step-one h6 {
+    border-bottom: 2px solid #1946ba; }
+
+.step-two {
+  grid-area: steptwo; }
+  .step-two .stepheaders {
+    background: linear-gradient(to bottom, #1946ba 25%, #1c4dca 25%, #1c4dca 50%, #1f56e0 50%, #1f56e0 75%, #3566e3 75%, #3566e3 100%); }
+  .step-two h6 {
+    border-bottom: 2px solid #39d52d; }
+
+.step-three {
+  grid-area: stepthree; }
+  .step-three .stepheaders {
+    background: linear-gradient(to bottom, #1946ba 25%, #4ad93f 25%, #4ad93f 50%, #1f56e0 50%, #1f56e0 75%, #72e26a 75%, #72e26a 100%); }
+  .step-three h6 {
+    border-bottom: 2px solid #39d52d; }
+  .step-three .list:nth-child(2) h6, .step-three .list:nth-child(3) h6, .step-three .list:nth-child(6) h6 {
+    border-bottom: 2px solid #1946ba; }
+
+.step-one, .step-two, .step-three {
+  display: grid;
+  grid-template: "headers" 65px "lists" auto/1fr; }
+  .step-one .stepheaders, .step-two .stepheaders, .step-three .stepheaders {
+    grid-area: headers;
+    text-align: center; }
+  .step-one .steplists, .step-two .steplists, .step-three .steplists {
+    grid-area: lists;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto; }
+  .step-one .list, .step-two .list, .step-three .list {
+    padding-left: 23px;
+    padding-right: 20px;
+    margin-top: 20px; }
+  .step-one ul, .step-two ul, .step-three ul {
+    list-style-image: url(../images/infusebullet.png); }
+  .step-one h6, .step-two h6, .step-three h6 {
+    font-size: 0.75em; }
+  .step-one li, .step-two li, .step-three li {
+    font-size: 0.75em; }
+
+.step-one .stepheaders {
+  color: white; }
+
+.step-two .stepheaders {
+  color: white; }
+
+.step-three .stepheaders {
+  color: white; }
+
+.viewall {
+  margin: 15px 0px; }
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 0px; }
+
+  .step-one .steplists, .step-two .steplists, .step-three .steplists {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .step-one .list:nth-child(2) h6, .step-one .list:nth-child(4) h6, .step-one .list:nth-child(6) h6, .step-two .list:nth-child(2) h6, .step-two .list:nth-child(4) h6, .step-two .list:nth-child(6) h6, .step-three .list:nth-child(2) h6, .step-three .list:nth-child(4) h6, .step-three .list:nth-child(6) h6 {
+    border-bottom: 2px solid #1946ba; }
+  .step-one .list:nth-child(3) h6, .step-two .list:nth-child(3) h6, .step-three .list:nth-child(3) h6 {
+    border-bottom: 2px solid #39d52d; }
+  .step-one h6, .step-two h6, .step-three h6 {
+    font-size: 1em; }
+  .step-one li, .step-two li, .step-three li {
+    font-size: 1em; } }
+@media only screen and (min-width: 900px) {
+  .step-one h6, .step-two h6, .step-three h6 {
+    font-size: 1.25em; }
+  .step-one li, .step-two li, .step-three li {
+    font-size: 1.25em; } }
+
+/*# sourceMappingURL=info.css.map */

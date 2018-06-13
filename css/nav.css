@@ -13,6 +13,10 @@ ul {
 a {
   text-decoration: none !important; }
 
+.offsetnav {
+  padding-top: 80px;
+  margin-top: -80px; }
+
 #nav-horizontal {
   display: none;
   height: 80px;
