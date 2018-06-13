@@ -80,7 +80,22 @@ main
     grid-template-columns: 1fr 1fr 1fr
 
   .bases
-    grid-template-columns: 1fr 1fr
+    grid-template: 'hair soaps' auto 'face soaps' auto 'personal lotion' / 1fr 1fr
+
+    .grid-hair
+      grid-area: hair
+
+    .grid-soaps
+      grid-area: soaps
+
+    .grid-face
+      grid-area: face
+
+    .grid-personal
+      grid-area: personal
+
+    .grid-lotion
+      grid-area: lotion
 
 @media only screen and (min-width: 768px)
 

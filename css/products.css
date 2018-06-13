@@ -60,7 +60,17 @@ main {
     grid-template-columns: 1fr 1fr 1fr; }
 
   .bases {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template: "hair soaps" auto "face soaps" auto "personal lotion"/1fr 1fr; }
+    .bases .grid-hair {
+      grid-area: hair; }
+    .bases .grid-soaps {
+      grid-area: soaps; }
+    .bases .grid-face {
+      grid-area: face; }
+    .bases .grid-personal {
+      grid-area: personal; }
+    .bases .grid-lotion {
+      grid-area: lotion; } }
 @media only screen and (min-width: 768px) {
   main {
     margin-top: 80px; } }

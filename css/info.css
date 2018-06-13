@@ -84,16 +84,16 @@ h1 {
     border-bottom: 2px solid #1946ba; }
 
 .step-two {
-  grid-area: steptwo; }
+  grid-area: stepthree; }
   .step-two .stepheaders {
-    background: linear-gradient(to bottom, #1946ba 25%, #1c4dca 25%, #1c4dca 50%, #1f56e0 50%, #1f56e0 75%, #3566e3 75%, #3566e3 100%); }
+    background: linear-gradient(to bottom, #1946ba 25%, #4ad93f 25%, #4ad93f 50%, #1f56e0 50%, #1f56e0 75%, #72e26a 75%, #72e26a 100%); }
   .step-two h6 {
     border-bottom: 2px solid #39d52d; }
 
 .step-three {
-  grid-area: stepthree; }
+  grid-area: steptwo; }
   .step-three .stepheaders {
-    background: linear-gradient(to bottom, #1946ba 25%, #4ad93f 25%, #4ad93f 50%, #1f56e0 50%, #1f56e0 75%, #72e26a 75%, #72e26a 100%); }
+    background: linear-gradient(to bottom, #1946ba 25%, #1c4dca 25%, #1c4dca 50%, #1f56e0 50%, #1f56e0 75%, #3566e3 75%, #3566e3 100%); }
   .step-three h6 {
     border-bottom: 2px solid #39d52d; }
   .step-three .list:nth-child(2) h6, .step-three .list:nth-child(3) h6, .step-three .list:nth-child(6) h6 {
