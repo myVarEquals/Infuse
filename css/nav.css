@@ -7,6 +7,13 @@ body, html {
 body {
   background-color: rgba(0, 0, 0, 0.2); }
 
+main {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  transition: 0.5s; }
+
 ul {
   list-style: none; }
 
@@ -175,6 +182,9 @@ footer {
 
   #nav-sidebar, #headcontent {
     display: none; }
+
+  main {
+    margin-top: 80px; }
 
   footer {
     height: 220px; }
