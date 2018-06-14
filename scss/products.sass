@@ -74,6 +74,42 @@ main
     grid-template-columns: 2fr 1fr
     grid-auto-rows: auto
 
+    .grid-lotion
+      top: 0
+
+.tooltip
+  display: inline-block
+  position: relative
+
+.tooltip .tooltext
+
+    width: 120px
+    background-color: black
+    color: #fff
+    text-align: center
+    border-radius: 6px
+    padding: 5px 0
+    position: absolute
+    z-index: 1
+    bottom: 150%
+    left: 50%
+    margin-left: -60px
+
+.tooltip .tooltiptext::after
+    content: ""
+    position: absolute
+    top: 100%
+    left: 50%
+    margin-left: -5px
+    border-width: 5px
+    border-style: solid
+    border-color: black transparent transparent transparent
+
+
+.tooltip:hover .tooltiptext
+    visibility: visible
+
+
 @media only screen and (min-width: 600px)
 
   .raw
@@ -87,6 +123,7 @@ main
 
     .grid-soaps
       grid-area: soaps
+      position: relative
 
     .grid-face
       grid-area: face
@@ -96,6 +133,9 @@ main
 
     .grid-lotion
       grid-area: lotion
+      position: relative
+      top: -38px
+
 
 @media only screen and (min-width: 768px)
 
