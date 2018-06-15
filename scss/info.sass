@@ -13,7 +13,6 @@ main
   max-width: 900px
   background-color: white
   transition: 0.5s
-  margin-top: 40px
 
 h1
   margin: 0
@@ -143,6 +142,14 @@ $green4: rgb(114, 226, 106)
     padding-left: 23px
     padding-right: 20px
     margin-top: 20px
+    transform: translateX(-20px)
+    opacity: 0
+    transition: 1s ease
+
+  .listappear
+    transform: translateX(0px)
+    opacity: 1
+    transition: 1s ease
 
   ul
     list-style-image: url(../images/infusebullet.png)
@@ -167,9 +174,6 @@ $green4: rgb(114, 226, 106)
 
 
 @media only screen and (min-width: 768px)
-
-  main
-    margin-top: 0px
 
   .step-one, .step-two, .step-three
 

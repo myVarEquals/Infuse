@@ -1,0 +1,29 @@
+main {
+  position: relative; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+h2 {
+  border-left: 4px solid #1946ba;
+  padding-left: 4px;
+  padding-bottom: 3px;
+  margin: 0 2px 2px 2px; }
+
+h4 {
+  line-height: 0.8;
+  border-left: 4px solid #39d52d;
+  padding-left: 4px;
+  padding-bottom: 3px;
+  margin: 0 2px 2px 2px; }
+
+p {
+  border-left: 4px solid black;
+  padding-left: 4px;
+  margin: 8px 2px 0px 2px; }
+
+.item a {
+  margin-left: 10px; }
+
+/*# sourceMappingURL=bases.css.map */

@@ -11,8 +11,7 @@ main {
   width: 100%;
   max-width: 900px;
   background-color: white;
-  transition: 0.5s;
-  margin-top: 40px; }
+  transition: 0.5s; }
 
 h1 {
   margin: 0;
@@ -113,7 +112,14 @@ h1 {
   .step-one .list, .step-two .list, .step-three .list {
     padding-left: 23px;
     padding-right: 20px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: 1s ease; }
+  .step-one .listappear, .step-two .listappear, .step-three .listappear {
+    transform: translateX(0px);
+    opacity: 1;
+    transition: 1s ease; }
   .step-one ul, .step-two ul, .step-three ul {
     list-style-image: url(../images/infusebullet.png); }
   .step-one h6, .step-two h6, .step-three h6 {
@@ -134,9 +140,6 @@ h1 {
   margin: 15px 0px; }
 
 @media only screen and (min-width: 768px) {
-  main {
-    margin-top: 0px; }
-
   .step-one .steplists, .step-two .steplists, .step-three .steplists {
     grid-template-columns: 1fr 1fr 1fr; }
   .step-one .list:nth-child(2) h6, .step-one .list:nth-child(4) h6, .step-one .list:nth-child(6) h6, .step-two .list:nth-child(2) h6, .step-two .list:nth-child(4) h6, .step-two .list:nth-child(6) h6, .step-three .list:nth-child(2) h6, .step-three .list:nth-child(4) h6, .step-three .list:nth-child(6) h6 {

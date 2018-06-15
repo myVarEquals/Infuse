@@ -146,6 +146,9 @@ footer {
   background-color: #1946ba;
   color: white;
   border-top: 2px solid #39d52d; }
+  footer ul {
+    margin: 0;
+    padding: 0; }
 
 .footergrid {
   width: 100%;
