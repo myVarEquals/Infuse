@@ -34,6 +34,9 @@ main
     font-size: 0.75em
     border-bottom: 1px dashed $green1
 
+h4
+  position: relative
+
 h5
   padding: 0 10%
 
@@ -101,7 +104,10 @@ h5
     grid-template-columns: 1fr 1fr 1fr
 
   .bases
-    grid-template: 'hair soaps' auto 'face soaps' auto 'personal lotion' / 1fr 1fr
+    grid-template: 'head head' auto 'hair soaps' auto 'face soaps' auto 'personal lotion' / 1fr 1fr
+
+    .bases-header-wrapper
+      grid-area: head
 
     .grid-hair
       grid-area: hair
