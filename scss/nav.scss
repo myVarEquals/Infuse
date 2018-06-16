@@ -141,6 +141,7 @@ a {
 	margin: 0;
 	padding: 0;
 	color: rgb(25,70,186);
+	z-index: 999
 
 }
 
@@ -247,6 +248,39 @@ footer {
 .footerhours {
 	grid-area: hours;
 	margin-bottom: 10px;
+}
+
+.social-media {
+	position: fixed;
+	right: 0;
+	top: 65%;
+	height: 120px;
+	width: 35px;
+	background-color: white;
+	border-radius: 5px 0px 0px 5px;
+	border: 1px solid black;
+	border-right: transparent;
+
+	a {
+		display: block;
+	}
+
+	.fab {
+		font-size: 30px;
+		margin: 5px 0;
+	}
+
+	.fa-facebook {
+		color: #3B5998;
+	}
+
+	.fa-instagram {
+		color: black;
+	}
+
+	.fa-pinterest {
+		color: #cb2027;
+	}
 }
 
 

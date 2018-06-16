@@ -36,9 +36,14 @@ main {
 }
 
 #landingHeaderWrapper,#tourwrapper {
-	transition: .5s ease;
+	transition: 1s ease;
 }
 
+
+.headerappear {
+	opacity: 1 !important;
+	transform: translate(-50%,-50%) !important;
+}
 
 #landingHeaderWrapper, #tourwrapper {
 	position: absolute;
@@ -58,10 +63,12 @@ main {
 			color: white;
 			transition: .5s ease;
 		}
-
-
-
 	}
+}
+
+#landingHeaderWrapper {
+	opacity: 0;
+	transform: translate(-50%, 20px);
 }
 
 #landingHeader, #tourheader {

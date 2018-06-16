@@ -58,6 +58,7 @@ h5 {
   width: 80%;
   min-height: 300px;
   border: 2px solid #39d52d;
+  border-radius: 0px 0px 15px 15px;
   background-color: #1946ba;
   color: white;
   box-shadow: 0px 8px 16px gray; }
@@ -72,6 +73,7 @@ h5 {
   background-color: white;
   color: black;
   border: 2px solid black;
+  border-radius: 0px 0px 15px 15px;
   display: grid;
   grid-template: "selfie name" "selfie title";
   grid-template-columns: 1fr 1fr;

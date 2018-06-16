@@ -106,7 +106,8 @@ a {
   font-size: 25px;
   margin: 0;
   padding: 0;
-  color: #1946ba; }
+  color: #1946ba;
+  z-index: 999; }
 
 #sidebar-head {
   border-bottom: 2px solid #39d52d;
@@ -178,6 +179,28 @@ footer {
 .footerhours {
   grid-area: hours;
   margin-bottom: 10px; }
+
+.social-media {
+  position: fixed;
+  right: 0;
+  top: 65%;
+  height: 120px;
+  width: 35px;
+  background-color: white;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid black;
+  border-right: transparent; }
+  .social-media a {
+    display: block; }
+  .social-media .fab {
+    font-size: 30px;
+    margin: 5px 0; }
+  .social-media .fa-facebook {
+    color: #3B5998; }
+  .social-media .fa-instagram {
+    color: black; }
+  .social-media .fa-pinterest {
+    color: #cb2027; }
 
 @media only screen and (min-width: 768px) {
   #nav-horizontal {

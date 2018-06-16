@@ -44,12 +44,18 @@ $(document).ready(function () {
 
   })
 
+  $(function() {
+
+    $('#landingHeaderWrapper').addClass('headerappear')
+    
+  })
+
   $(window).scroll(function() {
 
     var scrolling = $(this).scrollTop()
 
     if (scrolling > $('.step-three').offset().top - 500) {
-      
+
       $('.step-three .steplists .list').each(function(i) {
 
         setTimeout(function() {

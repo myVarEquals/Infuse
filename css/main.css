@@ -28,7 +28,11 @@ main {
   background-color: rgba(0, 0, 0, 0.2); }
 
 #landingHeaderWrapper, #tourwrapper {
-  transition: .5s ease; }
+  transition: 1s ease; }
+
+.headerappear {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) !important; }
 
 #landingHeaderWrapper, #tourwrapper {
   position: absolute;
@@ -45,6 +49,10 @@ main {
     #landingHeaderWrapper:hover #landingHeader, #landingHeaderWrapper:hover #tourheader, #tourwrapper:hover #landingHeader, #tourwrapper:hover #tourheader {
       color: white;
       transition: .5s ease; }
+
+#landingHeaderWrapper {
+  opacity: 0;
+  transform: translate(-50%, 20px); }
 
 #landingHeader, #tourheader {
   margin: 0;
