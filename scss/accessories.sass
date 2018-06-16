@@ -1,0 +1,93 @@
+main
+
+  h1
+    font-size: 20px
+    color: white
+
+  .accessories-header
+
+    h1
+      font-size: 40px
+      color: black
+
+.accessories-grid
+  display: grid
+  grid-template: "bracelets earrings" minmax(200px, auto) "necklaces keychain" minmax(200px, auto) "car car" minmax(200px, auto) "wool wool" minmax(300px, auto) "wtext wtext" minmax(300px, auto) "pet pet" minmax(300px, auto) "ptext ptext" minmax(300px, auto) / 1fr 1fr
+  grid-gap: 5px
+
+  .bracelets
+    position: relative
+    grid-area: bracelets
+    background:
+      image: url(../images/bracelet.png)
+      size: cover
+      position: center
+
+  .earrings
+    position: relative
+    grid-area: earrings
+    background:
+      image: url(../images/earrings.png)
+      size: cover
+      position: center
+
+  .necklaces
+    position: relative
+    grid-area: necklaces
+    background:
+      image: url(#)
+      size: cover
+      position: center
+
+  .key-chain
+    position: relative
+    grid-area: keychain
+    background:
+      image: url(../images/keychain.png)
+      size: cover
+      position: center
+
+  .car-vent
+    position: relative
+    grid-area: car
+    background:
+      image: url(../images/carvent.png)
+      size: cover
+      position: top center
+
+  .wool-dryer
+    position: relative
+    grid-area: wool
+    background:
+      image: url(../images/wooldryer.jpg)
+      size: cover
+      position: center
+
+  .text-wool
+    grid-area: wtext
+
+    h1
+      color: black
+      font-size: 40px
+
+  .aroma-pet
+    position: relative
+    grid-area: pet
+    background:
+      image: url(../images/aromapet.png)
+      size: cover
+      position: center
+
+  .text-pet
+    grid-area: ptext
+
+    h1
+      color: black
+      font-size: 40px
+
+  .img-text
+    position: absolute
+    bottom: 0
+    width: 100%
+    background-color: rgba(25,70,186,0.4)
+    color: white

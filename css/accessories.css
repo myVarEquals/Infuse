@@ -1,3 +1,71 @@
+main h1 {
+  font-size: 20px;
+  color: white; }
+main .accessories-header h1 {
+  font-size: 40px;
+  color: black; }
 
+.accessories-grid {
+  display: grid;
+  grid-template: "bracelets earrings" minmax(200px, auto) "necklaces keychain" minmax(200px, auto) "car car" minmax(200px, auto) "wool wool" minmax(300px, auto) "wtext wtext" minmax(300px, auto) "pet pet" minmax(300px, auto) "ptext ptext" minmax(300px, auto)/1fr 1fr;
+  grid-gap: 5px; }
+  .accessories-grid .bracelets {
+    position: relative;
+    grid-area: bracelets;
+    background-image: url(../images/bracelet.png);
+    background-size: cover;
+    background-position: center; }
+  .accessories-grid .earrings {
+    position: relative;
+    grid-area: earrings;
+    background-image: url(../images/earrings.png);
+    background-size: cover;
+    background-position: center; }
+  .accessories-grid .necklaces {
+    position: relative;
+    grid-area: necklaces;
+    background-image: url(#);
+    background-size: cover;
+    background-position: center; }
+  .accessories-grid .key-chain {
+    position: relative;
+    grid-area: keychain;
+    background-image: url(../images/keychain.png);
+    background-size: cover;
+    background-position: center; }
+  .accessories-grid .car-vent {
+    position: relative;
+    grid-area: car;
+    background-image: url(../images/carvent.png);
+    background-size: cover;
+    background-position: top center; }
+  .accessories-grid .wool-dryer {
+    position: relative;
+    grid-area: wool;
+    background-image: url(../images/wooldryer.jpg);
+    background-size: cover;
+    background-position: center; }
+  .accessories-grid .text-wool {
+    grid-area: wtext; }
+    .accessories-grid .text-wool h1 {
+      color: black;
+      font-size: 40px; }
+  .accessories-grid .aroma-pet {
+    position: relative;
+    grid-area: pet;
+    background-image: url(../images/aromapet.png);
+    background-size: cover;
+    background-position: center; }
+  .accessories-grid .text-pet {
+    grid-area: ptext; }
+    .accessories-grid .text-pet h1 {
+      color: black;
+      font-size: 40px; }
+  .accessories-grid .img-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(25, 70, 186, 0.4);
+    color: white; }
 
 /*# sourceMappingURL=accessories.css.map */
