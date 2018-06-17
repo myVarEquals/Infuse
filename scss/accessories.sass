@@ -1,5 +1,22 @@
 main
 
+  hr
+    border-top-width: 2px
+    border-color: rgb(25,70,186)
+    width: 75%
+
+  ul
+    padding: 0 10px 0 30px
+    list-style-image: url(../images/infusebullet.png)
+    margin-bottom: 10px
+
+  li
+    font-size: 15px
+    border-bottom: 1px solid black
+
+  li:nth-last-child(1)
+    border-bottom: none
+
   h1
     font-size: 20px
     color: white
@@ -9,10 +26,14 @@ main
     h1
       font-size: 40px
       color: black
+      padding-top: 20px
+
+    h4
+      margin-bottom: 20px
 
 .accessories-grid
   display: grid
-  grid-template: "bracelets earrings" minmax(200px, auto) "necklaces keychain" minmax(200px, auto) "car car" minmax(200px, auto) "wool wool" minmax(300px, auto) "wtext wtext" minmax(300px, auto) "pet pet" minmax(300px, auto) "ptext ptext" minmax(300px, auto) / 1fr 1fr
+  grid-template: "bracelets earrings" minmax(200px, auto) "necklaces keychain" minmax(200px, auto) "car car" minmax(400px, auto) "wool wool" minmax(300px, auto) "wtext wtext" auto "pet pet" minmax(200px, auto) "ptext ptext" auto / 1fr 1fr
   grid-gap: 5px
 
   .bracelets
@@ -21,7 +42,7 @@ main
     background:
       image: url(../images/bracelet.png)
       size: cover
-      position: center
+      position: bottom center
 
   .earrings
     position: relative
@@ -35,9 +56,9 @@ main
     position: relative
     grid-area: necklaces
     background:
-      image: url(#)
+      image: url(../images/necklace.jpg)
       size: cover
-      position: center
+      position: bottom center
 
   .key-chain
     position: relative
@@ -64,7 +85,23 @@ main
       position: center
 
   .text-wool
+    position: relative
     grid-area: wtext
+
+    ul
+      margin-top: 20px
+
+  .wool-header
+    position: absolute
+    text-align: center
+    top: -5px
+    left: 50%
+    width: 260px
+    transform: translate(-50%, -50%)
+    background-color: rgba(57,213,45, 0.8)
+    color: white
+    border: 2px solid white
+    padding: 4px
 
     h1
       color: black
@@ -84,10 +121,69 @@ main
     h1
       color: black
       font-size: 40px
+      text-align: center
+
+    h5
+      text-align: center
+
+    ul
+      position: relative
+      width: 300px
+      margin: 0 auto 20px auto
 
   .img-text
     position: absolute
+    padding-top: 3px
     bottom: 0
     width: 100%
     background-color: rgba(25,70,186,0.4)
     color: white
+    border-top: 5px solid white
+
+@media only screen and (min-width: 425px)
+
+  .accessories-grid
+    grid-template: "bracelets earrings" minmax(200px, auto) "necklaces keychain" minmax(200px, auto) "car car" minmax(600px, auto) "wool wool" minmax(400px, auto) "wtext wtext" auto "pet pet" minmax(300px, auto) "ptext ptext" auto / 1fr 1fr
+
+    .car-vent
+      background:
+        position: bottom center
+
+    .text-pet
+
+      ul
+        width: 400px
+
+
+@media only screen and (min-width: 768px)
+
+  .accessories-grid
+    grid-template: "bracelets earrings" minmax(350px, auto) "necklaces keychain" minmax(300px, auto) "wool car" minmax(550px, auto) "wtext wtext" auto "pet pet" minmax(550px, auto) "ptext ptext" auto / 1fr 1fr
+
+    .car-vent
+      background:
+        size: cover
+        position: center
+        repeat: no-repeat
+
+
+    .wool-dryer
+      background:
+        image: url(../images/wooldryer2.jpg)
+        size: cover
+        position: center
+
+    .wool-header
+      left: 25%
+      width: 260px
+      transform: translate(-50%, -50%)
+      background-color: rgba(57,213,45, 0.8)
+      color: white
+      border: 2px solid white
+      padding: 4px
+
+    .aroma-pet
+      background:
+        size: cover
+        position: contain
+        repeat: no-repeat

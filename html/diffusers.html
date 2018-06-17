@@ -32,8 +32,13 @@
 					<li class='nav-item'>
 						<a class='nav-link' href="info.html">Info</a>
 					</li>
-          <li class='nav-item'>
-            <a class='nav-link' href='products.html'>Products</a>
+          <li class='nav-item dropdown'>
+						<a class='nav-link dropdown-toggle' href='#' id='navbardropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Products</a>
+						<div class="dropdown-menu" aria-labelledby='navbardropdown'>
+							<a class='dropdown-item' href="products.html">Ingredients</a>
+							<a class='dropdown-item' href="#">Diffusers</a>
+							<a class='dropdown-item' href="accessories.html">Accessories</a>
+						</div>
           </li>
           <li class='nav-item'>
             <a class='nav-link' href='tour.html'>Tour</a>
@@ -59,8 +64,15 @@
 			<ul class='sidebar-links'>
 				<li class='sidebar-item'><a href='about.html'>About</a></li>
 				<li class='sidebar-item'><a href='info.html'>Info</a></li>
-				<li class='sidebar-item'><a href='products.html'>Products</a></li>
-				<li class='sidebar-item'><a href='tour.html'>Tour</a></li>
+				<li class='sidebar-item nav-item'>
+					<a class='nav-link collapsed' href='#sidenavbardropdown' role='button' data-toggle='collapse' data-target='#sidenavbardropdown'>Products▾</a>
+					<div class="collapse" id='sidenavbardropdown' aria-expanded='false'>
+						<a class='dropdown-item' href="products.html">Ingredients</a>
+						<a class='dropdown-item' href="#">Diffusers</a>
+						<a class='dropdown-item' href="accessories.html">Accessories</a>
+					</div>
+				</li>
+				<li class='sidebar-item tour'><a href='tour.html'>Tour</a></li>
 				<li class='sidebar-item'><a href='contact.php'>Contact</a></li>
 			</ul>
 

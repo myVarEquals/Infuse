@@ -31,6 +31,29 @@ a {
 }
 
 // Horizontal Styles
+
+.nav-item {
+	padding: 0;
+}
+
+.nav-link {
+	padding: 27px 0;
+}
+
+.dropdown-menu{
+	padding: 0;
+	background-color: white;
+	border: 2px solid black;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+	transition: 1s ease;
+
+
+	& .dropdown-item:hover {
+		background-color: rgb(25,70,186);
+	}
+
+}
 #nav-horizontal {
 	display: none;
 	height: 80px;
@@ -51,7 +74,6 @@ a {
 	.nav-item {
 		width: 80px;
 		height: 100%;
-		padding-top: 15px;
 		text-align: center;
 		transition: 1s ease-in-out;
 	}
@@ -119,6 +141,15 @@ a {
 	margin-top: 4px;
 
 
+}
+
+.sidebar-links .dropdown-item {
+	padding-left: 30px !important;
+	transition: 1s ease;
+
+	&:hover {
+		background-color: rgb(57,213,45);
+	}
 }
 
 #overlay {

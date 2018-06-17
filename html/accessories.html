@@ -32,9 +32,14 @@
 					<li class='nav-item'>
 						<a class='nav-link' href="info.html">Info</a>
 					</li>
-          <li class='nav-item'>
-            <a class='nav-link' href='products.html'>Products</a>
-          </li>
+          <li class='nav-item dropdown'>
+            <a class='nav-link dropdown-toggle' href='#' id='navbardropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Products</a>
+						<div class="dropdown-menu" aria-labelledby='navbardropdown'>
+							<a class='dropdown-item' href="products.html">Ingredients</a>
+							<a class='dropdown-item' href="#">Diffusers</a>
+							<a class='dropdown-item' href="accessories.html">Accessories</a>
+						</div>
+					</li>
           <li class='nav-item'>
             <a class='nav-link' href='tour.html'>Tour</a>
           </li>
@@ -59,7 +64,14 @@
 			<ul class='sidebar-links'>
 				<li class='sidebar-item'><a href='about.html'>About</a></li>
 				<li class='sidebar-item'><a href='info.html'>Info</a></li>
-				<li class='sidebar-item'><a href='products.html'>Products</a></li>
+				<li class='sidebar-item nav-item'>
+					<a class='nav-link collapsed' href='#sidenavbardropdown' role='button' data-toggle='collapse' data-target='#sidenavbardropdown'>Products▾</a>
+					<div class="collapse" id='sidenavbardropdown' aria-expanded='false'>
+						<a class='dropdown-item' href="products.html">Ingredients</a>
+						<a class='dropdown-item' href="#">Diffusers</a>
+						<a class='dropdown-item' href="accessories.html">Accessories</a>
+					</div>
+				</li>
 				<li class='sidebar-item'><a href='tour.html'>Tour</a></li>
 				<li class='sidebar-item'><a href='contact.php'>Contact</a></li>
 			</ul>
@@ -79,41 +91,42 @@
 
       <div class="accessories-wrapper">
 
-        <div class="accessories-header">
+        <div class="accessories-header text-center">
             <h1>Accessories</h1>
-            <h4>Hand made and high quality. Styles vary depending on artist.</h4>
-            <h4>Call or stop by for more info!</h4>
+						<hr>
+            <h4>Hand made and high quality diffuser accessoriers! Styles vary.</h4>
+            <h4>Call or come in for more info!</h4>
         </div>
 
         <div class="accessories-grid">
 
           <div class="bracelets">
             <div class="img-text text-center">
-              <h1>Diffuser Bracelets</h1>
+              <h1>Bracelets</h1>
             </div>
           </div>
 
           <div class="earrings">
             <div class="img-text text-center">
-              <h1>Diffuser Earrings</h1>
+              <h1>Earrings</h1>
             </div>
           </div>
 
           <div class="necklaces">
             <div class="img-text text-center">
-              <h1>Diffuser Necklaces</h1>
+              <h1>Necklaces</h1>
             </div>
           </div>
 
           <div class="car-vent">
             <div class="img-text text-center">
-              <h1>Car Vent Diffuser</h1>
+              <h1>Car Vent</h1>
             </div>
           </div>
 
           <div class="key-chain">
             <div class="img-text text-center">
-              <h1>Diffuser Key Chain</h1>
+              <h1>Key Chain</h1>
             </div>
           </div>
 
@@ -121,22 +134,23 @@
           </div>
 
           <div class="text-wool">
-            <h1>Wool Dryer Balls</h1>
-            <h4>Softener that is Eco Green Earth Friendly- Gentle on your Laundry, Skin and Wallet</h4>
+            <h2 class='wool-header'>Wool Dryer Balls</h2>
             <ul>
+							<li>Softener that is Eco Green Earth Friendly- Gentle on your Laundry, Skin and Wallet</li>
               <li>Join The Natural Laundry Revolution -Soften Laundry the Natural Chemical FREE Way (No more Fabric Softener Sheets or Liquid Needed)</li>
               <li>Shave Time off the Time it Takes your Dryer to Dry Laundry - Saving You Energy Cost</li>
               <li>Minimize Wrinkles and Static Resulting in Extra Lofty Comforters and Blankets</li>
               <li>Shep's Wool Dryer Balls help your Cloth Diapers and Towels become Soft and Absorbent Once Again</li>
             </ul>
           </div>
-`
+
           <div class="aroma-pet">
           </div>
 
           <div class="text-pet">
             <h1>Aroma Pet</h1>
-            <h4>Extremely high quality, very plush, soft, safe for kids and one of a kind!</h4>
+						<hr>
+            <h5>Extremely high quality, very plush, soft, safe for kids and one of a kind!</h5>
             <ul>
               <li>Add 2-3 Drops of any Essential Oil to the included pad</li>
               <li>Insert into the specially designed pocket</li>

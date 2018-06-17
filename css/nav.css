@@ -24,6 +24,22 @@ a {
   padding-top: 80px;
   margin-top: -80px; }
 
+.nav-item {
+  padding: 0; }
+
+.nav-link {
+  padding: 27px 0; }
+
+.dropdown-menu {
+  padding: 0;
+  background-color: white;
+  border: 2px solid black;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  transition: 1s ease; }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #1946ba; }
+
 #nav-horizontal {
   display: none;
   height: 80px;
@@ -40,7 +56,6 @@ a {
   .navbar .nav-item {
     width: 80px;
     height: 100%;
-    padding-top: 15px;
     text-align: center;
     transition: 1s ease-in-out; }
   .navbar .nav-item:hover {
@@ -88,6 +103,12 @@ a {
 #side-logo {
   height: 30px;
   margin-top: 4px; }
+
+.sidebar-links .dropdown-item {
+  padding-left: 30px !important;
+  transition: 1s ease; }
+  .sidebar-links .dropdown-item:hover {
+    background-color: #39d52d; }
 
 #overlay {
   position: fixed;

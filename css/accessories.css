@@ -1,20 +1,36 @@
+main hr {
+  border-top-width: 2px;
+  border-color: #1946ba;
+  width: 75%; }
+main ul {
+  padding: 0 10px 0 30px;
+  list-style-image: url(../images/infusebullet.png);
+  margin-bottom: 10px; }
+main li {
+  font-size: 15px;
+  border-bottom: 1px solid black; }
+main li:nth-last-child(1) {
+  border-bottom: none; }
 main h1 {
   font-size: 20px;
   color: white; }
 main .accessories-header h1 {
   font-size: 40px;
-  color: black; }
+  color: black;
+  padding-top: 20px; }
+main .accessories-header h4 {
+  margin-bottom: 20px; }
 
 .accessories-grid {
   display: grid;
-  grid-template: "bracelets earrings" minmax(200px, auto) "necklaces keychain" minmax(200px, auto) "car car" minmax(200px, auto) "wool wool" minmax(300px, auto) "wtext wtext" minmax(300px, auto) "pet pet" minmax(300px, auto) "ptext ptext" minmax(300px, auto)/1fr 1fr;
+  grid-template: "bracelets earrings" minmax(200px, auto) "necklaces keychain" minmax(200px, auto) "car car" minmax(400px, auto) "wool wool" minmax(300px, auto) "wtext wtext" auto "pet pet" minmax(200px, auto) "ptext ptext" auto/1fr 1fr;
   grid-gap: 5px; }
   .accessories-grid .bracelets {
     position: relative;
     grid-area: bracelets;
     background-image: url(../images/bracelet.png);
     background-size: cover;
-    background-position: center; }
+    background-position: bottom center; }
   .accessories-grid .earrings {
     position: relative;
     grid-area: earrings;
@@ -24,9 +40,9 @@ main .accessories-header h1 {
   .accessories-grid .necklaces {
     position: relative;
     grid-area: necklaces;
-    background-image: url(#);
+    background-image: url(../images/necklace.jpg);
     background-size: cover;
-    background-position: center; }
+    background-position: bottom center; }
   .accessories-grid .key-chain {
     position: relative;
     grid-area: keychain;
@@ -46,8 +62,22 @@ main .accessories-header h1 {
     background-size: cover;
     background-position: center; }
   .accessories-grid .text-wool {
+    position: relative;
     grid-area: wtext; }
-    .accessories-grid .text-wool h1 {
+    .accessories-grid .text-wool ul {
+      margin-top: 20px; }
+  .accessories-grid .wool-header {
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    left: 50%;
+    width: 260px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(57, 213, 45, 0.8);
+    color: white;
+    border: 2px solid white;
+    padding: 4px; }
+    .accessories-grid .wool-header h1 {
       color: black;
       font-size: 40px; }
   .accessories-grid .aroma-pet {
@@ -60,12 +90,52 @@ main .accessories-header h1 {
     grid-area: ptext; }
     .accessories-grid .text-pet h1 {
       color: black;
-      font-size: 40px; }
+      font-size: 40px;
+      text-align: center; }
+    .accessories-grid .text-pet h5 {
+      text-align: center; }
+    .accessories-grid .text-pet ul {
+      position: relative;
+      width: 300px;
+      margin: 0 auto 20px auto; }
   .accessories-grid .img-text {
     position: absolute;
+    padding-top: 3px;
     bottom: 0;
     width: 100%;
     background-color: rgba(25, 70, 186, 0.4);
-    color: white; }
+    color: white;
+    border-top: 5px solid white; }
+
+@media only screen and (min-width: 425px) {
+  .accessories-grid {
+    grid-template: "bracelets earrings" minmax(200px, auto) "necklaces keychain" minmax(200px, auto) "car car" minmax(600px, auto) "wool wool" minmax(400px, auto) "wtext wtext" auto "pet pet" minmax(300px, auto) "ptext ptext" auto/1fr 1fr; }
+    .accessories-grid .car-vent {
+      background-position: bottom center; }
+    .accessories-grid .text-pet ul {
+      width: 400px; } }
+@media only screen and (min-width: 768px) {
+  .accessories-grid {
+    grid-template: "bracelets earrings" minmax(350px, auto) "necklaces keychain" minmax(300px, auto) "wool car" minmax(550px, auto) "wtext wtext" auto "pet pet" minmax(550px, auto) "ptext ptext" auto/1fr 1fr; }
+    .accessories-grid .car-vent {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .accessories-grid .wool-dryer {
+      background-image: url(../images/wooldryer2.jpg);
+      background-size: cover;
+      background-position: center; }
+    .accessories-grid .wool-header {
+      left: 25%;
+      width: 260px;
+      transform: translate(-50%, -50%);
+      background-color: rgba(57, 213, 45, 0.8);
+      color: white;
+      border: 2px solid white;
+      padding: 4px; }
+    .accessories-grid .aroma-pet {
+      background-size: cover;
+      background-position: contain;
+      background-repeat: no-repeat; } }
 
 /*# sourceMappingURL=accessories.css.map */
