@@ -17,6 +17,17 @@ main {
 		transition: 0.5s;
 }
 
+@font-face {
+	font-family: 'Museo';
+	src: url(MUSEO-300.OTF);
+	font-style: normal;
+	font-weight: 300;
+}
+
+h1, h3, h4, h6, .nav-item, .sidebar-item {
+	font-family: Museo, sans-serif;
+}
+
 ul {
 	list-style: none;
 }

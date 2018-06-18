@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,iBAAiB;EACf,QAAQ,EAAE,QAAQ;;AAEpB,SAAS;EACP,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAoB",
+"sources": ["../scss/tour.sass"],
 "names": [],
 "file": "tour.css"
 }

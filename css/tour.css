@@ -1,3 +1,10 @@
+.fb-video-wrapper {
+  position: relative; }
 
+.fb-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=tour.css.map */
