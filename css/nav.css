@@ -1,3 +1,6 @@
+input::placeholder, textarea::placeholder {
+  color: #39d52d !important; }
+
 body, html {
   width: 100%;
   height: 100%;
@@ -19,7 +22,7 @@ main {
   src: url(MUSEO-300.OTF);
   font-style: normal;
   font-weight: 300; }
-h1, h3, h4, h6, .nav-item, .sidebar-item {
+h1, h2, h3, h4, h6, .nav-item, .sidebar-item {
   font-family: Museo, sans-serif; }
 
 ul {
