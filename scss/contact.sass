@@ -23,8 +23,7 @@ main
   max-width: 500px
   min-width: 300px
   margin: 110px 0
-  border: 2px solid rgb(25,70,186)
-  border-radius: 25px
+  border: 2px solid black
   box-shadow: 3px 3px 3px hsl(240,20%,70%)
 
 form
@@ -34,6 +33,7 @@ form
 
   input, textarea
     border: 1px solid rgb(25,70,186) !important
+    border-radius: 0
     width: 100% !important
 
   button
@@ -43,7 +43,11 @@ form
     background-color: rgb(25,70,186)
     border: 2px solid rgb(25,70,186)
     border-radius: 4px
+    transition: 1s ease
 
+  button:hover
+    background-color: rgb(57,213,45)
+    transition: 1s ease
 
 
 .alert
@@ -53,9 +57,7 @@ form
 
 .contact-header
   padding: 1em 0
-  color: rgb(25,70,186)
-  text-shadow: 2px 2px 1px rgb(57,213,45)
-  font-family: 'La Belle Aurore', cursive
+  color: black
 
 
 .form-control
