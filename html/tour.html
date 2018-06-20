@@ -16,6 +16,17 @@
   </head>
   <body>
 
+    <!-- FYI Channel 6 Video Script -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
 
   	<!-- <img src='../images/InfuseLogo.png'> -->
   	 <nav id='nav-horizontal' class='navbar sticky-top navbar-expand-md'>
@@ -35,7 +46,7 @@
               <a class='nav-link dropdown-toggle' href='#' id='navbardropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Products</a>
   						<div class="dropdown-menu" aria-labelledby='navbardropdown'>
   							<a class='dropdown-item' href="products.html">Ingredients</a>
-  							<a class='dropdown-item' href="#">Diffusers</a>
+  							<a class='dropdown-item' href="diffusers.html">Diffusers</a>
   							<a class='dropdown-item' href="accessories.html">Accessories</a>
   						</div>
             </li>
@@ -67,7 +78,7 @@
             <a class='nav-link collapsed' href='#sidenavbardropdown' role='button' data-toggle='collapse' data-target='#sidenavbardropdown'>Products▾</a>
 						<div class="collapse" id='sidenavbardropdown' aria-expanded='false'>
 							<a class='dropdown-item' href="products.html">Ingredients</a>
-							<a class='dropdown-item' href="#">Diffusers</a>
+							<a class='dropdown-item' href="diffusers.html">Diffusers</a>
 							<a class='dropdown-item' href="accessories.html">Accessories</a>
 						</div>
           </li>
@@ -89,42 +100,45 @@
   		<main id='maincontent'>
 
         <div class="tour-grid">
+
           <div class="tour-header-wrapper">
+            <div class="tour-header text-center">
+              <h1>Our doors are open</h1>
+              <hr>
+              <h4>Let us show you around</h4>
+            </div>
+          </div>
+
+          <div class="tour-first">
+            <div class="tour-text">
+              <h6>Aroma Room</h6>
+              <p>Walk into our relaxing Aroma Room and design and create your
+                 own custom unique scent from our 75+ Cerrtified Organic, 100%
+                  Pure Natural Essential Oils.</p>
+            </div>
+          </div>
+
+          <div class="tour-second">
+            <div class="tour-text">
+              <h6>Diffusers</h6>
+              <p>We carry many varieties of diffusers from nebulizers to ultra-sonic.
+              We carry many varieties of diffusers from nebulizers to ultra-sonic.</p>
+            </div>
 
           </div>
 
-          <div class="tour-images-wrapper">
+          <div class="fb-video-wrapper">
 
-            <div class="tour-first">
-              <div class="tour-text">
-                <p></p>
-              </div>
-            </div>
-
-            <div class="tour-second">
-              <div class="tour-text">
-                <p></p>
-              </div>
-
+            <div class="fb-video-header text-center">
+              <h1>Were on TV!</h1>
+              <hr>
+              <h4>Channel 6 Philadelphia</h4>
             </div>
 
           </div>
-        </div>
-
-        <div class="fb-video-wrapper">
-          <!-- FYI Channel 6 Video Script -->
-          <!-- Load Facebook SDK for JavaScript -->
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
 
           <!-- Your embedded video player code -->
-          <div class="fb-video" data-href="https://www.facebook.com/infusedhere/videos/1814063028898548/" data-width="500" data-show-text="false">
+          <div class="fb-video" data-href="https://www.facebook.com/infusedhere/videos/1814063028898548/" data-width="auto" data-show-text="false">
             <div class="fb-xfbml-parse-ignore">
               <blockquote cite="https://www.facebook.com/facebook/videos/10153231379946729/">
                 <a href="https://www.facebook.com/facebook/videos/10153231379946729/">How to Share With Just Friends</a>
@@ -133,7 +147,14 @@
               </blockquote>
             </div>
           </div>
+
+
         </div>
+
+
+
+
+
 
   			<div id='overlay'></div>
 

@@ -1,3 +1,144 @@
+main {
+  margin-top: 45px; }
 
+.diffusers-header-wrapper {
+  height: 300px;
+  position: relative; }
+  .diffusers-header-wrapper hr {
+    border-color: #39d52d;
+    width: 75%; }
+  .diffusers-header-wrapper .diffusers-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.diffusers-grid {
+  display: grid;
+  grid-template: "ultra" 300px "nebu" 300px/1fr;
+  grid-gap: 40px; }
+
+.ultra-sonic {
+  grid-area: ultra;
+  display: grid;
+  grid-template: "image info" 300px/1fr 1fr; }
+  .ultra-sonic .ultra-sonic-image {
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/diffusersingle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: translateY(-60px);
+    transition: 1.5s ease;
+    opacity: 0; }
+  .ultra-sonic .ultra-sonic-image-appear {
+    transform: translateY(0px);
+    transition: 1.5s ease;
+    opacity: 1; }
+  .ultra-sonic .ultra-sonic-text {
+    grid-area: info;
+    margin-top: 60px;
+    transform: translateX(60px);
+    transition: 1.5s ease;
+    opacity: 0; }
+    .ultra-sonic .ultra-sonic-text h4 {
+      border-bottom: 2px solid #1946ba;
+      display: inline-block; }
+    .ultra-sonic .ultra-sonic-text p {
+      display: inline-block;
+      font-size: 12px;
+      max-width: 194px; }
+  .ultra-sonic .ultra-sonic-text-appear {
+    transform: translateX(0px);
+    transition: 1.5s ease;
+    opacity: 1; }
+
+.nebulizer {
+  grid-area: nebu;
+  display: grid;
+  grid-template: "info image" 300px/1fr 1fr; }
+  .nebulizer .nebulizer-image {
+    grid-area: image;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/nebulizer2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: translateX(60px);
+    transition: 1.5s ease;
+    opacity: 0; }
+  .nebulizer .nebulizer-image-appear {
+    transform: translateX(0px);
+    transition: 1.5s ease;
+    opacity: 1; }
+  .nebulizer .nebulizer-text {
+    grid-area: info;
+    margin-top: 20px;
+    padding-right: 10px;
+    transform: translateY(60px);
+    transition: 1.5s ease;
+    opacity: 0; }
+    .nebulizer .nebulizer-text h4 {
+      border-bottom: 2px solid #1946ba;
+      display: inline-block; }
+    .nebulizer .nebulizer-text p {
+      display: inline-block;
+      font-size: 12px;
+      max-width: 194px; }
+  .nebulizer .nebulizer-text-appear {
+    transform: translateY(0px);
+    transition: 1.5s ease;
+    opacity: 1; }
+
+@media only screen and (min-width: 600px) {
+  .diffusers-grid {
+    grid-template: "ultra" 450px "nebu" 450px/1fr; }
+
+  .ultra-sonic {
+    grid-template: "image info" 450px/1fr 1fr; }
+    .ultra-sonic .ultra-sonic-text {
+      margin-top: 50px; }
+      .ultra-sonic .ultra-sonic-text h4 {
+        font-size: 28px; }
+      .ultra-sonic .ultra-sonic-text p {
+        font-size: 15px; }
+
+  .nebulizer {
+    grid-template: "info image" 450px/1fr 1fr; }
+    .nebulizer .nebulizer-text {
+      margin-top: 50px; }
+      .nebulizer .nebulizer-text h4 {
+        font-size: 28px; }
+      .nebulizer .nebulizer-text p {
+        font-size: 15px; } }
+@media only screen and (min-width: 750px) {
+  .diffusers-grid {
+    grid-template: "ultra" 559px "nebu" 600px/1fr; }
+
+  .ultra-sonic {
+    grid-template: "image info" 559px/1fr 1fr; }
+    .ultra-sonic .ultra-sonic-text {
+      margin-top: 100px; }
+      .ultra-sonic .ultra-sonic-text h4 {
+        font-size: 32px; }
+      .ultra-sonic .ultra-sonic-text p {
+        font-size: 18px;
+        max-width: 300px; }
+
+  .nebulizer {
+    grid-template: "info image" 600px/1fr 1fr; }
+    .nebulizer .nebulizer-text {
+      margin-top: 100px; }
+      .nebulizer .nebulizer-text h4 {
+        font-size: 32px; }
+      .nebulizer .nebulizer-text p {
+        font-size: 18px;
+        max-width: 300px; } }
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 80px; } }
 
 /*# sourceMappingURL=diffuser.css.map */
