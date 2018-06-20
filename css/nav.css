@@ -207,6 +207,12 @@ footer {
 
 .footerloc {
   grid-area: loc; }
+  .footerloc li:hover a {
+    color: #39d52d; }
+  .footerloc a {
+    text-decoration: none;
+    color: white;
+    transition: 1s ease; }
 
 .footerhours {
   grid-area: hours;

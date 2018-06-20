@@ -249,6 +249,8 @@ footer {
 		margin: 0;
 		padding: 0;
 	}
+
+
 }
 
 .footergrid {
@@ -289,6 +291,16 @@ footer {
 
 .footerloc {
 	grid-area: loc;
+
+  li:hover a {
+		color: rgb(57,213,45);
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		transition: 1s ease;
+	}
 }
 
 .footerhours {
