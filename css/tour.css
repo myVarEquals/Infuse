@@ -95,7 +95,7 @@ p {
     grid-gap: 10px; } }
 @media only screen and (min-width: 768px) {
   main {
-    margin-top: 0; } }
+    margin-top: 80px; } }
 @media only screen and (min-width: 900px) {
   .tour-first {
     height: 500px;
