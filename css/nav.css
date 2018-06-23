@@ -1,3 +1,8 @@
+#Setmore_button_iframe {
+  right: 65px;
+  bottom: -65px;
+  transform: rotate(90deg); }
+
 input::placeholder, textarea::placeholder {
   color: #39d52d !important; }
 
@@ -174,7 +179,7 @@ a {
 
 footer {
   position: relative;
-  height: 350px;
+  height: 370px;
   width: 100%;
   background-color: #1946ba;
   color: white;
@@ -220,19 +225,19 @@ footer {
 
 .social-media {
   position: fixed;
-  right: 0;
-  top: 65%;
-  height: 120px;
-  width: 35px;
+  left: 3px;
+  bottom: 0;
+  height: 32px;
+  width: 130px;
   background-color: white;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 5px 0px 0px;
   border: 1px solid black;
-  border-right: transparent; }
+  border-bottom: transparent; }
   .social-media a {
-    display: block; }
+    display: inline-block; }
   .social-media .fab {
     font-size: 30px;
-    margin: 5px 0; }
+    margin: 1px 4px 0px 4px; }
   .social-media .fa-facebook {
     color: #3B5998; }
   .social-media .fa-instagram {

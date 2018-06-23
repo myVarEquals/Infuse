@@ -8,13 +8,14 @@ ul
 
 
 main
+  margin-top: 40px
   position: relative
   width: 100%
   max-width: 900px
   background-color: white
   transition: 0.5s
 
-  
+
 
 h1
   margin: 0
@@ -35,7 +36,7 @@ h1
 .products-grid
   position: relative
   display: grid
-  grid-template: "stepone" minmax(300px, auto) "imgone" 300px "steptwo" minmax(300px, auto) "imgtwo" 300px "stepthree" minmax(300px, auto) "imgthree" 300px / 1fr
+  grid-template: "stepone" minmax(300px, auto) "imgone" auto "steptwo" minmax(300px, auto) "imgtwo" auto "stepthree" minmax(300px, auto) "imgthree" auto / 1fr
 
 .step-one-feat-img
   position: relative
@@ -43,9 +44,9 @@ h1
   width: 100%
   height: 300px
   background:
-    image: url(../images/accessories.png)
+    image: url(../images/lavender.jpeg)
     size: cover
-    position: top center
+    position: top  center
 
 .step-two-feat-img
   position: relative
@@ -53,7 +54,7 @@ h1
   width: 100%
   height: 300px
   background:
-    image: url(../images/accessories.png)
+    image: url(../images/blueberry.jpeg)
     size: cover
     position: top center
 
@@ -63,13 +64,14 @@ h1
   width: 100%
   height: 300px
   background:
-    image: url(../images/accessories.png)
+    image: url(../images/coffee.jpg)
     size: cover
     position: top center
 
 .img-caption
   position: absolute
-  right: 0
+  top: 20px
+  right: 20px
   height: 50px
   width: 100px
   border: 2px solid white
@@ -106,10 +108,13 @@ $green4: rgb(114, 226, 106)
   grid-area: stepthree
 
   .stepheaders
-    background: linear-gradient(to bottom, $blue1 25%, /* Top */ $green2 25%, $green2 50%, $blue3 50%, $blue3 75%, $green4 75%, $green4 100%)
+    background: linear-gradient(to bottom, $green1 25%, /* Top */ $green2 25%, $green2 50%, $green3 50%, $green3 75%, $green4 75%, $green4 100%)
 
   h6
     border-bottom: 2px solid $green1
+
+  .list:nth-child(2) h6, .list:nth-child(3) h6, .list:nth-child(6) h6
+    border-bottom: 2px solid $blue1
 
 
 .step-three
@@ -118,12 +123,9 @@ $green4: rgb(114, 226, 106)
   .stepheaders
     background: linear-gradient(to bottom, $blue1 25%, /* Top */ $blue2 25%, $blue2 50%, $blue3 50%, $blue3 75%, $blue4 75%, $blue4 100%)
 
-
   h6
     border-bottom: 2px solid $green1
 
-  .list:nth-child(2) h6, .list:nth-child(3) h6, .list:nth-child(6) h6
-    border-bottom: 2px solid $blue1
 
 
 .step-one, .step-two, .step-three
@@ -174,13 +176,29 @@ $green4: rgb(114, 226, 106)
 .viewall
   margin: 15px 0px
 
+@media only screen and (min-width: 475px)
+
+  .step-one-feat-img
+    height: 400px
+
+  .step-two-feat-img
+    height: 400px
+
+  .step-three-feat-img
+    height: 400px
+
 
 @media only screen and (min-width: 768px)
+
+  main
+    margin-top: 80px
 
   .step-one, .step-two, .step-three
 
     .steplists
       grid-template-columns: 1fr 1fr 1fr
+
+  .step-two
 
     .list:nth-child(2) h6, .list:nth-child(4) h6, .list:nth-child(6) h6
       border-bottom: 2px solid $blue1
@@ -195,6 +213,18 @@ $green4: rgb(114, 226, 106)
       font-size: 1em
 
 @media only screen and (min-width: 900px)
+
+  .step-one-feat-img
+    background:
+      position: top -75px center
+
+  .step-two-feat-img
+    background:
+      position: top -75px center
+
+  .step-three-feat-img
+    background:
+      position: top center
 
     .step-one, .step-two, .step-three
 
